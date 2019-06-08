@@ -8351,4 +8351,13 @@ html.safari .znav-freya .dropdown {
   animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
   -webkit-animation: loading 0.8s infinite;
   animation: loading 0.8s infinite;
+} 
+
+/* Gallery styles */
+.gallery_col {
+  margin-bottom: 15px;
 }
+.gallery-img:hover{
+  opacity: 0.8;
+}
+
