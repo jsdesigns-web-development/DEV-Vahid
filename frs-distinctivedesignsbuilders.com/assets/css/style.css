@@ -8360,4 +8360,12 @@ html.safari .znav-freya .dropdown {
 .gallery-img:hover{
   opacity: 0.8;
 }
+/* footer */
 
+.footer-row {
+  padding-top: 5px;
+}
+.footer-row a:hover {
+   color: white !important;
+   text-decoration: none;
+}
