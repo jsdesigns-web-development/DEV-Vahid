@@ -8377,3 +8377,11 @@ html.safari .znav-freya .dropdown {
    color: white !important;
    text-decoration: none;
 }
+
+/* servise */
+
+.services-sub-divs {
+  padding: 25px;
+  border-bottom: 1px solid #eee;
+  border-radius: 5px;
+}
