@@ -1,7 +1,7 @@
-/* 
-Theme Name: FORCE Bootstrap Theme 
+/*
+Theme Name: FORCE Bootstrap Theme
 Author: WebThemez.com
-License: https://webthemez.com/license 
+License: https://webthemez.com/license
 */
 /*--------------------------------------------------------------
 # General
@@ -201,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 29px;
   text-align: left;
   /* font-weight: bold; */
-} 
+}
 #hero .hero-content h2 span {
   color: #ffffff;
   text-align: right;
@@ -581,7 +581,7 @@ Inner Banner
 	text-align:center;
 }
 .svgImg{
-	
+
 }
 .svgImg img{
 	width:120px;
@@ -969,17 +969,17 @@ opacity:1;
   background-color: #0978d1;
 }
 .map{
-	
+
 margin: 80px auto 40px;
 }
 p.help-block,
 p.help-block ul{
-    float: left; 
+    float: left;
     margin: 0;
     padding: 0;
 }
 p.help-block li {
-    float: left; 
+    float: left;
     margin: 10px 0 0 0;
     padding: 0;
     list-style:none;
@@ -1260,4 +1260,22 @@ p.help-block li {
     width: auto;
     height: 70px;
     margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  #hero .container .hero-content h2 {
+    font-size: 20px;
+  }
+
+  #hero .container .hero-content h2 span {
+    font-size: 30px;
+  }
+
+  .hero-content .h3 span {
+    font-size: 20px !important;
+}
+
+#logo h1{
+  font-size: 25px !important;
+}
 }
