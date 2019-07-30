@@ -1230,6 +1230,88 @@ p.help-block li {
 }
 
 /*--------------------------------------------------------------
+# Real Estate Section
+--------------------------------------------------------------*/
+#dre {
+  margin-left: 9em;
+  vertical-align:middle;
+}
+
+@media (max-width: 765px) {
+  #dre {
+    vertical-align: top;
+  }
+}
+
+@media (max-width: 435px) {
+  #dre {
+    margin-left: 8em;
+  }
+}
+
+@media (max-width: 419px) {
+  #dre {
+    margin-left: 7em;
+  }
+}
+
+@media (max-width: 403px) {
+  #dre {
+    margin-left: 6em;
+  }
+}
+
+@media (max-width: 387px) {
+  #dre {
+    margin-left: 5em;
+  }
+}
+
+@media (max-width: 371px) {
+  #dre {
+    margin-left: 4em;
+  }
+}
+@media (max-width: 355px) {
+  #dre {
+    margin-left: 3em;
+  }
+}
+
+@media (max-width: 339px) {
+  #dre {
+    margin-left: 2em;
+  }
+}
+@media (max-width: 323px) {
+  #dre {
+    margin-left: 1em;
+  }
+}
+@media (max-width: 307px) {
+  #dre {
+    margin-left: 0em;
+  }
+}
+
+#rekeys {
+  text-align: center;
+}
+
+@media (max-width: 990px) {
+  #rekeys {
+    text-align: left;
+  }
+}
+
+/*--------------------------------------------------------------
+# Associates Section
+--------------------------------------------------------------*/
+
+.associate-indent {
+  padding-left: 1em;
+}
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
