@@ -8,7 +8,7 @@
     /* ----------------------------------
 
     JS Active Code Index
-            
+
         01. Preloader
         02. Header class - on scroll
         03. Scroll To Top
@@ -26,9 +26,9 @@
         15. CountUp
         16. Countdown
         17. Isotop and Popup
-        
-        
-    ---------------------------------- */    
+
+
+    ---------------------------------- */
 
 (function($) {
 
@@ -53,7 +53,7 @@
             var scroll = $window.scrollTop();
             if (scroll <= 50) {
                 $("header").removeClass("scrollHeader").addClass("fixedHeader");
-            } 
+            }
             else {
                 $("header").removeClass("fixedHeader").addClass("scrollHeader");
             }
@@ -91,7 +91,7 @@
                 $(this).css("background-image", "url(" + $(this).data("background") + ")");
             }
         });
-        
+
         /*------------------------------------
             05. Video
         --------------------------------------*/
@@ -200,7 +200,7 @@
 
         /*------------------------------------
             11. FullScreenHeight and screenHeight with resize function
-        --------------------------------------*/        
+        --------------------------------------*/
 
         function SetResizeContent() {
             fullScreenHeight();
@@ -235,7 +235,7 @@
             loop: true,
             responsiveClass: true,
             autoplay: true,
-            smartSpeed: 800,            
+            smartSpeed: 800,
             nav: false,
             dots: true,
             center:true,
@@ -271,7 +271,7 @@
                 576: {
                     items: 2,
                     margin: 14
-                },                
+                },
                 992: {
                     items: 3,
                     margin: 15,
@@ -289,7 +289,7 @@
             loop:true,
             dots: false,
             nav: true,
-            navText: ['<span class="fas fa-chevron-left"></span>', '<span class="fas fa-chevron-right"></span>'],            
+            navText: ['<span class="fas fa-chevron-left"></span>', '<span class="fas fa-chevron-right"></span>'],
             margin: 0,
             autoplay:true,
             smartSpeed:500,
@@ -305,8 +305,8 @@
                     nav: true,
                     dots: false
                 }
-            }            
-        }); 
+            }
+        });
 
         // Departments owlCarousel
         $('.department-details .owl-carousel').owlCarousel({
@@ -316,7 +316,7 @@
             margin: 0,
             autoplay:true,
             smartSpeed:500
-        }); 
+        });
 
         // Default owlCarousel
         $('.owl-carousel').owlCarousel({
@@ -326,7 +326,7 @@
             margin: 0,
             autoplay:true,
             smartSpeed:500
-        });   
+        });
 
         // Slider text animation
         var owl = $('.slider-fade');
@@ -381,7 +381,7 @@
             date: "01 Jan 2021 00:01:00", //set your date and time. EX: 15 May 2014 12:00:00
             format: "on"
         });
-      
+
     });
 
     // === when window loading === //
