@@ -330,6 +330,141 @@ h1, h2, h3, h4, h5, h6 {
   transition-property: opacity;
 }
 
+@media (max-width: 1282px) {
+  #hero .hero-content h2 span {
+    font-size: 55px;
+  }
+  #hero .hero-content h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1187px) {
+  #hero .hero-content h2 span {
+    font-size: 50px;
+  }
+  #hero .hero-content h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1042px) {
+  #hero .hero-content h2 span {
+    font-size: 45px;
+  }
+  #hero .hero-content h2 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 975px) {
+  #hero .hero-content h2 span {
+    font-size: 40px;
+  }
+  #hero .hero-content h2 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 842px) {
+  #hero .hero-content h2 span {
+    font-size: 35px;
+  }
+  #hero .hero-content h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 766px) {
+  #hero .hero-content h2 span {
+    font-size: 30px;
+  }
+  #hero .hero-content h2 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 642px) {
+  #hero .hero-content h2 span {
+    font-size: 25px;
+  }
+  #hero .hero-content h2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 587px) {
+  #hero .hero-content h2 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 530px) {
+  #hero .hero-content h2 span {
+    font-size: 23px;
+  }
+  #hero .hero-content h2 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 499px) {
+  #hero .hero-content h2 span {
+    font-size: 20px;
+  }
+  #hero .hero-content h2 {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 456px) {
+  #hero .hero-content h2 span {
+    font-size: 20px;
+  }
+  #hero .hero-content h2 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 414px) {
+  #hero .hero-content h2 span {
+    font-size: 19px;
+  }
+  #hero .hero-content h2 {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 390px) {
+  #hero .hero-content h2 span {
+    font-size: 18px;
+  }
+  #hero .hero-content h2 {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 368px) {
+  #hero .hero-content h2 span {
+    font-size: 17px;
+  }
+  #hero .hero-content h2 {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 368px) {
+  #hero .hero-content .btn-banner {
+    padding: 5px 15px;
+  }
+}
+
+@media (max-width: 342px) {
+  #hero .hero-content h2 span {
+    font-size: 16px;
+  }
+  #hero .hero-content h2 {
+    font-size: 8px;
+  }
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1337,6 +1472,8 @@ p.help-block li {
 #footer .credits a {
   color: #0978d1;
 }
+
+
 .owl-carousel .owl-item img {
     display: block;
     width: auto;
@@ -1344,6 +1481,7 @@ p.help-block li {
     margin: 0 auto;
 }
 
+/*
 @media (max-width: 500px) {
   #hero .container .hero-content h2 {
     font-size: 20px;
@@ -1361,3 +1499,4 @@ p.help-block li {
   font-size: 25px !important;
 }
 }
+*/
