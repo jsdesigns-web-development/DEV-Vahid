@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 74px;
   }
   #header #logo h1 {
-    font-size: 34px;
+    font-size: 25px;
   }
   #header #logo img {
     max-height: 40px;
@@ -1500,3 +1500,9 @@ p.help-block li {
 }
 }
 */
+
+.call{
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
