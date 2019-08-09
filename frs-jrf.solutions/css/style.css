@@ -1291,6 +1291,13 @@ p.help-block li {
   font-weight: 700;
 }
 
+#call-to-action .cta-title-contact-page {
+  /* color: #fff; */
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
 #call-to-action .cta-text {
   /* color: #fff; */
 }
