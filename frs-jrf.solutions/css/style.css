@@ -1792,3 +1792,16 @@ p.help-block li {
   animation-delay: 2s;
   animation-iteration-count: infinite;
 }
+
+.app-os {
+  font-size: 1.5em;
+  padding: 5px 15px 5px 15px;
+  border: 2px solid #3178D1;
+  border-radius: 0.3em;
+  text-align: center;
+}
+
+.app-os:hover  {
+  border-width: 3px;
+  border-radius: 1em;
+}
