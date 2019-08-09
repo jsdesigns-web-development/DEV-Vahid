@@ -1839,3 +1839,7 @@ p.help-block li {
     font-size: 25px;
     border-radius: 15px;
 }
+
+#btn-assoc-res:hover{
+  background-color:#1f4e9d !important;
+}
