@@ -1812,3 +1812,7 @@ p.help-block li {
   border-width: 3px;
   border-radius: 1em;
 }
+
+#btn-assoc-res:hover {
+  background-color: #1F4E9D;
+}
