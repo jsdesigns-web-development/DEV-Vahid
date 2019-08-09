@@ -1717,14 +1717,6 @@ p.help-block li {
   #hero .container .hero-content h2 .re-title {
     font-size: 24px;
   }
-
-  .btn-call{
-      border: white 1px solid;
-      padding: 5px 8px !important;
-      font-size: 15px !important;
-      border-radius: 1px;
-  }
-
 }
 
 @media (max-width: 626px) {
@@ -1787,7 +1779,6 @@ p.help-block li {
       font-size: 15px !important;
       border-radius: 1px;
   }
-
 }
 @media (max-width: 365px) {
   #hero .container .hero-content h2 .re-title {
@@ -1821,6 +1812,7 @@ p.help-block li {
 }
 
 */
+
 .call{
   animation-duration: 3s;
   animation-delay: 2s;
