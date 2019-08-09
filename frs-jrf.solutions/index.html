@@ -31,17 +31,14 @@ License: https://webthemez.com/license
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link rel="stylesheet" href="css/font-icon.css">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
-    
-
-
-  <!-- Main Stylesheet File -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+ <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+
+
 </head>
 
 <body id="body">
-
   <!--==========================
     Top Bar
   ============================-->
@@ -88,7 +85,12 @@ License: https://webthemez.com/license
   <!--==========================
     Hero Section
   ============================-->
+
   <section id="hero" class="clearfix">
+      <a href="tel:19259805866" style="cursor: pointer;"><div class="phone-fixed" onmouseover="phoneHover()" onmouseout="phoneUnHover()">
+        <div class="text-right"><i id="phone-number" class="fa fa-phone text-light call">&nbsp;(925) 980-8566</i></div>
+      </div></a>
+
    <div class="container">
       <div class="hero-banner">
         <img src="img/intro-carousel/jrf-headshot.png" alt="" class="img-fluid">
@@ -101,10 +103,9 @@ License: https://webthemez.com/license
           <span>Living Benefits</span>
         </h2>
       <div>
-          <a href="#services" class="btn-banner">Our Solutions</a>  
+          <a href="#services" class="btn-banner">Our Solutions</a>
 
-      </div> <br>
-         <h2 class=""> <i class="fa fa-phone text-light tada call"> +1 2345 67855 22</i> </h2>
+      </div>
       </div>
 
     </div>
@@ -337,7 +338,19 @@ License: https://webthemez.com/license
   <script src="lib/sticky/sticky.js"></script>
  <script src="contact/jqBootstrapValidation.js"></script>
  <script src="contact/contact_me.js"></script>
-  <script src="js/main.js"></script>
+ <script src="js/main.js"></script>
+ <script type="text/javascript">
+  /*
+  function phoneHover(){
+    document.getElementById("phone-number").style.color = 'black';
+    console.log("phoneHover() activated")
+  }
 
+  function phoneUnHover(){
+    document.getElementById("phone-number").style.color = 'orange';
+    console.log("phoneUnHover() activated")
+  }
+  */
+ </script>
 </body>
 </html>

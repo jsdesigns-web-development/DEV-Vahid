@@ -182,6 +182,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     bottom: 0px;
     vertical-align: bottom;
+    pointer-events: none;
 }
 #hero .hero-content {
   position: absolute;
@@ -193,6 +194,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   flex-direction: column;
   text-align: left;
+  pointer-events: none;
 }
 
 #hero .hero-content h2 {
@@ -330,6 +332,39 @@ h1, h2, h3, h4, h5, h6 {
   transition-property: opacity;
 }
 
+.phone-fixed {
+  position: absolute;
+  background-color: #5E88BD;
+  font-size: 1.5em;
+  right: 1.5em;
+  margin-top: 1em;
+  padding-top: 0.5em;
+  padding-left: 1em;
+  padding-right: 1.25em;
+  padding-bottom: 0.5em;
+  border: 3px solid #ADC7E1;
+  border-radius: 2em;
+}
+
+.phone-fixed:hover {
+    border-color: white;
+}
+
+.phone-fixed a {
+  color: #F8F9FA;
+}
+
+.phone-fixed a:hover {
+  color: white;
+}
+
+/*
+
+body {
+  pointer-events: none;
+}
+*/
+
 @media (max-width: 1282px) {
   #hero .hero-content h2 span {
     font-size: 55px;
@@ -346,6 +381,9 @@ h1, h2, h3, h4, h5, h6 {
   #hero .hero-content h2 {
     font-size: 25px;
   }
+  .phone-fixed {
+    font-size: 1.3em;
+  }
 }
 
 @media (max-width: 1042px) {
@@ -355,7 +393,18 @@ h1, h2, h3, h4, h5, h6 {
   #hero .hero-content h2 {
     font-size: 23px;
   }
+  .phone-fixed {
+    font-size: 1.2em;
+  }
 }
+
+@media (max-width: 1012px) {
+  .phone-fixed {
+    font-size: 1.1em;
+  }
+}
+
+
 @media (max-width: 975px) {
   #hero .hero-content h2 span {
     font-size: 40px;
@@ -365,12 +414,30 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 870px) {
+  .phone-fixed {
+    font-size: 0.9em;
+  }
+}
+
 @media (max-width: 842px) {
   #hero .hero-content h2 span {
     font-size: 35px;
   }
   #hero .hero-content h2 {
     font-size: 18px;
+  }
+  .phone-fixed {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .phone-fixed {
+    position: fixed;
+    z-index: 55555;
+    margin-top: -4em;
+    right: 12em;
   }
 }
 
@@ -382,6 +449,24 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
   }
 }
+@media (max-width: 705px) {
+  #hero .hero-content h2 span {
+    font-size: 30px;
+  }
+  #hero .hero-content h2 {
+    font-size: 15px;
+  }
+  .phone-fixed {
+    /*font-size: 0.8em;*/
+  }
+}
+
+@media (max-width: 704px) {
+  .phone-fixed {
+    margin-top: -4em;
+    right: 11em;
+  }
+}
 
 @media (max-width: 642px) {
   #hero .hero-content h2 span {
@@ -390,10 +475,16 @@ h1, h2, h3, h4, h5, h6 {
   #hero .hero-content h2 {
     font-size: 14px;
   }
+  .phone-fixed {
+    right: 10em;
+  }
 }
 @media (max-width: 587px) {
   #hero .hero-content h2 {
     font-size: 13px;
+  }
+  .phone-fixed {
+    right: 8em;
   }
 }
 
@@ -404,6 +495,9 @@ h1, h2, h3, h4, h5, h6 {
   #hero .hero-content h2 {
     font-size: 12px;
   }
+  .phone-fixed {
+    right: 7em;
+  }
 }
 
 @media (max-width: 499px) {
@@ -412,6 +506,15 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .hero-content h2 {
     font-size: 11px;
+  }
+  .phone-fixed {
+    right: 6em;
+  }
+}
+
+@media (max-width: 485px) {
+  .phone-fixed {
+    right: 5em;
   }
 }
 
@@ -422,6 +525,30 @@ h1, h2, h3, h4, h5, h6 {
   #hero .hero-content h2 {
     font-size: 10px;
   }
+  .phone-fixed {
+    right: 4em;
+  }
+}
+
+@media (max-width: 445px) {
+  .phone-fixed {
+    right: 4.5em;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 445px) {
+  .phone-fixed {
+    right: 6em;
+    font-size: 0.7em;
+    margin-top: -4.5em;
+  }
+}
+
+@media (max-width: 425px) {
+  .phone-fixed {
+    right: 5.5em;
+  }
 }
 
 @media (max-width: 414px) {
@@ -430,6 +557,31 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .hero-content h2 {
     font-size: 9px;
+  }
+  .phone-fixed {
+    right: 4.5em;
+  }
+}
+
+@media (max-width: 405px) {
+  .phone-fixed {
+    right: 6em;
+    font-size: 0.6em;
+    margin-top: -5em;
+  }
+}
+
+@media (max-width: 395px) {
+  #hero .hero-content h2 span {
+    font-size: 18px;
+  }
+  #hero .hero-content h2 {
+    font-size: 9px;
+  }
+  .phone-fixed {
+    right: 5.25em;
+    font-size: 0.6em;
+    margin-top: -5em;
   }
 }
 
@@ -440,6 +592,11 @@ h1, h2, h3, h4, h5, h6 {
   #hero .hero-content h2 {
     font-size: 9px;
   }
+  .phone-fixed {
+    right: 6em;
+    font-size: 0.5em;
+    margin-top: -5.25em;
+  }
 }
 
 @media (max-width: 368px) {
@@ -449,11 +606,11 @@ h1, h2, h3, h4, h5, h6 {
   #hero .hero-content h2 {
     font-size: 8px;
   }
-}
-
-@media (max-width: 368px) {
   #hero .hero-content .btn-banner {
     padding: 5px 15px;
+  }
+  .phone-fixed {
+    visibility: hidden;
   }
 }
 
