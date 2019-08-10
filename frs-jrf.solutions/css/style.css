@@ -1819,6 +1819,7 @@ p.help-block li {
   animation-iteration-count: infinite;
 }
 
+
 .app-os {
   font-size: 1.5em;
   padding: 5px 15px 5px 15px;
@@ -1834,10 +1835,15 @@ p.help-block li {
 
 /* phone number */
 .btn-call{
-    border: white 2px solid;
+    border: white 1px solid;
     padding: 10px 35px;
     font-size: 25px;
     border-radius: 15px;
+    transition: 0.4s ease-in;
+}
+
+.btn-call:hover{
+  background: #2C69AB;
 }
 
 #btn-assoc-res:hover{
