@@ -1741,6 +1741,10 @@ p.help-block li {
   #hero .container .hero-content h2 .re-title {
     font-size: 21px;
   }
+
+  .associate-indent {
+    padding-left: 0.5em;
+  }
 }
 
 @media (max-width: 529px) {
