@@ -1735,6 +1735,14 @@ p.help-block li {
       font-size: 10px;
       border-radius: 15px;
   }
+
+  .financial-strategies-titles{
+    margin-top: 25px !important;
+  }
+  .financial-strategies-titles2 {
+    margin-top: 0px !important;
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 550px) {
