@@ -1731,9 +1731,17 @@ p.help-block li {
   }
   .btn-call{
       border: white 1px solid;
-      padding: 9px 10px;
       font-size: 10px;
-      border-radius: 15px;
+      border-radius: 5px !important;
+      min-width: 100px;
+  }
+
+  #phone-number{
+    font-size: 30px;
+  }
+
+  .phoneText{
+    display: none;
   }
 
   .financial-strategies-titles{
