@@ -1740,6 +1740,7 @@ p.help-block li {
     font-size: 30px;
   }
 
+
   .phoneText{
     display: none;
   }
@@ -1864,8 +1865,22 @@ p.help-block li {
 
 .btn-call:hover{
   background: #2C69AB;
+  border: white 1px solid;
+
+
 }
 
 #btn-assoc-res:hover{
   background-color:#1f4e9d !important;
+}
+/* video styles */
+.responsiveVideo {
+  width: 560px;
+  height: 315px;
+}
+@media (max-width: 580px) {
+  .responsiveVideo {
+    width: 95%;
+    height: auto;
+  }
 }
