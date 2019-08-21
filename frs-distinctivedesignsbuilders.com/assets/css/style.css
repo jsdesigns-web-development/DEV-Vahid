@@ -8534,7 +8534,26 @@ h2::after {
 	font-size: 14px;
 	color: #ffdc12;
 }
-
+/* homepage */
 .homeLinks:hover {
   text-decoration: none;
+}
+
+/* about */
+.aboutLogo{
+  width: 350px;
+  height: 350px;
+}
+
+.aboutParent{
+  position: relative;
+}
+
+.aboutChild {
+  position: absolute;
+}
+
+.aboutChild{
+  opacity: 0.2;
+  margin-top: -50px;
 }
