@@ -8535,9 +8535,15 @@ h2::after {
 	color: #ffdc12;
 }
 /* homepage */
+
+.homeLinks {
+   transition: 0.5s ease-in-out;
+}
 .homeLinks:hover {
   text-decoration: none;
+  opacity: 0.7;
 }
+
 
 /* about */
 .aboutLogo{

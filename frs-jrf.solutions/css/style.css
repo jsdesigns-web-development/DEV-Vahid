@@ -183,7 +183,10 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0px;
     vertical-align: bottom;
     pointer-events: none;
+
 }
+
+
 #hero .hero-content {
   position: absolute;
   bottom: 0;
@@ -195,6 +198,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   text-align: left;
   pointer-events: none;
+  z-index: 1000;
 }
 
 #hero .hero-content h2 {
@@ -218,7 +222,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   padding: 10px 25px;
   font-weight: bold;
-  z-index: 1000;
 }
 
 #hero .hero-content .btn-banner:hover {
