@@ -1879,6 +1879,11 @@ p.help-block li {
   width: 560px;
   height: 315px;
 }
+
+.responsiveVideo-text {
+  margin-bottom: 5em;
+}
+
 @media (max-width: 580px) {
   .responsiveVideo {
     width: 95%;
