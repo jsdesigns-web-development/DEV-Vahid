@@ -21,9 +21,12 @@ $(window).on('load', function(){
 
 
 
-// Two possibilities exist: either we are alone in the Universe or we are not. 
+// Two possibilities exist: either we are alone in the Universe or we are not.
 // Both are equally terrifying.
 // And this is a strange fix for menu hover on iPad
 $(document).ready(function() {
    $('body').bind('touchstart', function() {});
+
+   
+
 });
