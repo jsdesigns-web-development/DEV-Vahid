@@ -197,7 +197,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  pointer-events: none;
 }
 
 #hero .hero-content h2 {
@@ -226,8 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .hero-content .btn-banner:hover {
   background: none;
   color: #fff;
-  background: red;
-  border: 2px solid #0062cc;
+  background: #2C69AB;
 }
 
 #intro {
