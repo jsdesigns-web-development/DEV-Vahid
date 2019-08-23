@@ -1851,9 +1851,8 @@ p.help-block li {
 }
 
 .app-os:hover  {
-  border-width: 3px;
-  border-radius: 1em;
 }
+
 
 /* phone number */
 .btn-call{
