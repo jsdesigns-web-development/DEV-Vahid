@@ -8605,3 +8605,7 @@ h2::after {
   width: 350px;
   margin-top: -25px;
 }
+
+.noHover:hover {
+  text-decoration: none;
+}
