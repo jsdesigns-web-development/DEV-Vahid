@@ -8391,6 +8391,11 @@ html.safari .znav-freya .dropdown {
   margin: 5px auto;
 }
 
+.services-link:hover {
+  text-decoration: none;
+  background: gray;
+}
+
 /* testimonial */
 h2 {
 	text-align: center;
@@ -8541,6 +8546,7 @@ h2::after {
     background: rgba(0, 0, 0, 0.04);
     border: 1px solid #e0e0e0;
     padding: 15px 0 10px 0;
+    height: 250px;
     }
 .box > .icon > .info > h3.title {
   font-family: "Futura PT", sans-serif;
@@ -8548,7 +8554,7 @@ h2::after {
     color: #E33834;
     font-weight: 500;
     }
-.box > .icon > .info > p {
+.box > .icon > .info > a p {
     font-family: sans-serif !important;
     font-size: 13px;
     color: #666;
