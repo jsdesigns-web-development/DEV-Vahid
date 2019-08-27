@@ -8548,6 +8548,12 @@ h2::after {
     padding: 15px 0 10px 0;
     height: 250px;
     }
+
+    @media (max-width: 400px) {
+      .box > .icon > .info {
+          height: auto;
+          }
+    }
 .box > .icon > .info > h3.title {
   font-family: "Futura PT", sans-serif;
     font-size: 28px;
