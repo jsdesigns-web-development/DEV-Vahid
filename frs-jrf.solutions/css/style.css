@@ -1850,9 +1850,17 @@ p.help-block li {
   text-align: center;
 }
 
-.app-os:hover  {
+.app-os:hover {
+  /*background-color: rgba(44,105,171, 0.2);*/
+  transition: 0.2s ease-in;
+  background: #0978d1;
+  border: 3px solid #0978d1;
+  color: #0a3455;
 }
 
+.app-os:hover a  {
+  color: #0a3455;
+}
 
 /* phone number */
 .btn-call{
@@ -1866,8 +1874,6 @@ p.help-block li {
 .btn-call:hover{
   background: #2C69AB;
   border: white 1px solid;
-
-
 }
 
 #btn-assoc-res:hover{
