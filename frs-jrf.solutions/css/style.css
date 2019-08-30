@@ -1679,7 +1679,7 @@ p.help-block li {
   position: absolute;
   top: 10px;
   right: 0px;
-  z-index: 99999 !important;
+  z-index: 20;
 }
 
 @media (max-width: 1763px) {
