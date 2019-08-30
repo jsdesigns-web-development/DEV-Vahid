@@ -8621,3 +8621,7 @@ h2::after {
 .noHover:hover {
   text-decoration: none;
 }
+
+.text-shadow {
+  text-shadow: 2px 2px 4px #444444  ;
+}
