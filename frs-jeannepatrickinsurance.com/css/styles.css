@@ -1197,6 +1197,17 @@ h2.resp-accordion.resp-tab-active {
     font-size: 16px;
     color: #6f6f6f;
     line-height: 12px; }
+
+    .tab-style1 .resp-tabs-list .tab-box h1 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 50px;
+      color: #6f6f6f;
+      line-height: 12px; }
+
+      .tab-style1 .resp-tabs-list li.resp-tab-active h1 {
+        color: #00bcd1; }
+
   .tab-style1 .resp-tabs-list .tab-box span {
     text-transform: lowercase;
     font-size: 12px; }
