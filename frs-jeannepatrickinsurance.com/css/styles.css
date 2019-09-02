@@ -15,7 +15,7 @@
     05. Banner area
     06. Page title
     07. Feature boxes
-    08. Timetable Calendar 
+    08. Timetable Calendar
     09. Counter box
     10. Video
     11. Testmonial
@@ -28,9 +28,9 @@
     18. Team single
     19. Other
     20. Blog
-    21. Contact info        
+    21. Contact info
     22. Footer
-    
+
 ---------------------------------- */
 /* ===================================
     Common styles
@@ -582,7 +582,7 @@ a.butn.white:hover, a.butn.white:active {
     .feature-box-02 h4 {
       letter-spacing: 2px; } }
 /* ===================================
-    Timetable Calendar 
+    Timetable Calendar
 ====================================== */
 #external-events {
   float: left;
@@ -1972,3 +1972,11 @@ footer h3 {
       padding: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
+
+/* about medicare */
+
+@media (max-width: 991px) {
+  .sm-top-padding {
+    margin-top: 20px !important;
+  }
+}
