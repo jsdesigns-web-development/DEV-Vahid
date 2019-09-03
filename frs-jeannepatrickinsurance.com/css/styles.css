@@ -1991,3 +1991,10 @@ footer h3 {
     margin-top: 20px !important;
   }
 }
+
+@media (max-width: 618px;) {
+  .medicare-list {
+  margin-left: 50px !important;
+
+  }
+}
