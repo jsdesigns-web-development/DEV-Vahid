@@ -1992,8 +1992,9 @@ footer h3 {
   }
 }
 
-.medicare-list {
-  border-top: none;
-  border-left: none;
-  border-right: none;
+@media (max-width: 618px;) {
+  .medicare-list {
+  margin-left: 50px !important;
+
+  }
 }
