@@ -2006,3 +2006,7 @@ footer h3 {
 
   }
 }
+
+#about-phone {
+  white-space: nowrap;
+}
