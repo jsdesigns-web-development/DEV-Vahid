@@ -1998,3 +1998,11 @@ footer h3 {
 
   }
 }
+
+/* about */
+@media (max-width: 7px;) {
+  .margin-top {
+  margin-top: 100px; !important;
+
+  }
+}
