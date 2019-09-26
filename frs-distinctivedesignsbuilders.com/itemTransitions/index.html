@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Item Transition Inspiration | Demo 1: Small Component</title>
+		<meta name="description" content="Item Transition Inspiration | Demo 1: Small Component" />
+		<meta name="keywords" content="item transition, css animation, inspiration, web design, demo" />
+		<meta name="author" content="Codrops" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/fxsmall.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<!--style>
+		:root {
+		  --debug-border: 1px solid black;
+		}
+
+		* { background-color: rgba(255,0,0,.2); border: var(--debug-border);}
+		* * { background-color: rgba(0,255,0,.2); border: var(--debug-border);}
+		* * * { background-color: rgba(0,0,255,.2); border: var(--debug-border);}
+		* * * * { background-color: rgba(255,0,255,.2); border: var(--debug-border);}
+		* * * * * { background-color: rgba(0,255,255,.2); border: var(--debug-border);}
+		* * * * * * { background-color: rgba(255,255,0,.2); border: var(--debug-border);}
+		* * * * * * * { background-color: rgba(255,0,0,.2); border: var(--debug-border);}
+		* * * * * * * * { background-color: rgba(0,255,0,.2); border: var(--debug-border);}
+		* * * * * * * * * { background-color: rgba(0,0,255,.2); border: var(--debug-border);}
+
+		.itemwrap li img {
+			padding-top: 0;
+		}
+
+	</style-->
+
+
+	<body>
+		<div class="container">
+
+			<section id="imgDisplaySection">
+
+				<div class="custom-select" style="display: none;">
+					<select id="fxselect" name="fxselect">
+						<option value="-1">Choose an effect...</option>
+						<option value="fxPhotoBrowse" selected>Photo Browse</option>
+					</select>
+				</div>
+
+				<div id="component" class="component component-small">
+
+				</div>
+			</section>
+		</div><!-- /container -->
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">
+
+			function fileNames() {
+			  return [
+			    "attach51213_20190820_183236.jpg",
+			    "attach51214_20190820_183236.jpg",
+			    "attach51215_20190820_183236.jpg",
+			    "attach51216_20190820_183237.jpg",
+			    "attach51218_20190820_183237.jpg",
+			    "attach51219_20190820_183240.jpg",
+			    "attach51220_20190820_183240.jpg",
+			    "attach51221_20190820_183240.jpg",
+			    "attach51222_20190820_183439.jpg",
+			    "attach51223_20190820_183439.jpg",
+			    "attach51224_20190820_183439.jpg",
+			    "attach51225_20190820_183441.jpg",
+			    "attach51226_20190820_183441.jpg",
+			    "attach51227_20190820_183441.jpg",
+			    "attach51228_20190820_183602.jpg",
+			    "attach51229_20190820_183602.jpg",
+			    "attach51230_20190820_183602.jpg",
+			    "attach51231_20190820_183605.jpg",
+			    "attach51232_20190820_183605.jpg",
+			    "attach51233_20190820_183609.jpg",
+			    "attach51234_20190820_183609.jpg",
+			    "attach51235_20190820_183609.jpg",
+			    "attach51236_20190820_183616.jpg",
+			    "attach51237_20190820_183616.jpg",
+			    "attach51238_20190820_183616.jpg"
+			  ];
+			}
+
+			function directoryPath() {
+			  return "img/"
+			}
+
+			function generateLineString(imgPosition){
+				var classStr = "";
+
+				if(imgPosition == 0) {
+					classStr = " class=\"current\"";
+				}
+
+				return "  <li" + classStr + ">\n    <img id=\"image" + imgPosition + "\" src=\"" + directoryPath() + fileNames()[imgPosition] + "\" alt=\"" + fileNames()[imgPosition].split('.')[0] + "\"/>\n  </li>\n"
+			};
+
+			function generateContent(){
+				var fileArray = fileNames();
+				var contentArray = ["<ul id=\"itemWrap\" class=\"itemwrap\">\n"];
+
+				// iterate through line strings
+				for(var x=0; x < fileArray.length - 1; x++) {
+					contentArray.push(generateLineString(x));
+				}
+
+				// append </ul> & nav
+				contentArray.push("</ul>\n");
+				contentArray.push("<nav>\n");
+				contentArray.push("<a class=\"prev\" href=\"#\">Previous item</a>\n");
+				contentArray.push("<a class=\"next\" href=\"#\">Next item</a>\n");
+				contentArray.push("</nav>\n");
+
+				var contentStr = "";
+
+				for(var y=0; y < contentArray.length -1; y++){
+					contentStr += contentArray[y];
+				}
+
+				return contentStr;
+			}
+
+			function insertContent(content){
+				$('#component').append(content);
+			}
+
+			function isGreaterThan(naturalVal, minVal) {
+				if(naturalVal > minVal) {
+					return naturalVal;
+				}	else {
+					return minVal;
+				}
+			}
+
+			function getMinImgDimensions(){
+				var minWidth = 0;
+				var minHeight = 0;
+				var myImg;
+
+
+				for(x=0; x<fileNames().length-1; x++){
+					var imgStr = "image" + x;
+					myImg = document.getElementById(imgStr);
+/*
+					minHeight = isGreaterThan(myImg.height, minHeight);
+					minWidth = isGreaterThan(myImg.width, minWidth);
+*/
+					var highness = $('#'+imgStr).height();
+					var wideness = $('#'+imgStr).width();
+					minHeight = isGreaterThan(highness, minHeight);
+					minWidth = isGreaterThan(wideness, minWidth);
+
+					console.log("#" + imgStr + ": " + myImg.naturalWidth + " width x " + myImg.naturalHeight + " height (NATURAL)");
+					console.log("#" + imgStr + ": " + minWidth + " width x " + minHeight + " height");
+				}
+				console.log("FINAL: " + minWidth + " width x " + minHeight + " height");
+				return { 'width': minWidth, 'height': minHeight };
+
+			}
+
+			function setContainerDimensions(maxWidth, maxHeight){
+				var styleBlock = "<style>\n" +
+				"  #component {\n		height: " + (maxHeight) + "px;\n		min-width: " + (maxWidth) + "px;\n	}\n\n" +
+				/*"  #component {\n		min-height: " + (maxHeight) + "px;\n		min-width: " + (maxWidth) + "px;\n	}\n\n" +*/
+				"  .itemwrap {\n		max-height: " + maxHeight + "px;\n			}\n\n" +
+				"</style>";
+
+				$('head').append(styleBlock);
+			}
+
+			var imgContent = generateContent();
+			insertContent(imgContent);
+
+			document.addEventListener("DOMContentLoaded", function(event) {
+				// loop through images and determine max width+height for image container
+				var minImgDimensions = getMinImgDimensions();
+
+				// need to reload page because img dimensions occassionally return as 0 x 0
+				if(minImgDimensions.width == 0 && minImgDimensions.height == 0) {
+					location.reload();
+				}
+
+				// set image container dimensions according to max dimensions
+				var strPx = '\'' + minImgDimensions.height + 'px\'';
+				//console.log(strPx);
+
+				//document.getElementById('imgDisplaySection').style.height = '\'' + maxImgDimensions.height + 'px\'';
+				setContainerDimensions(minImgDimensions.width, minImgDimensions.height);
+
+
+			});
+
+
+		</script>
+		<script src="js/classie.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
