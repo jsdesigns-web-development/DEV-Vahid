@@ -8643,3 +8643,13 @@ h2::after {
 .text-shadow {
   text-shadow: 2px 2px 4px #444444  ;
 }
+
+#mg-padding {
+  padding-top: 17em;
+}
+
+@media (max-width: 1252px) {
+  #mg-padding {
+    padding-top: 1em;
+  }
+}
