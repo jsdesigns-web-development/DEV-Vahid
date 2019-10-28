@@ -235,11 +235,13 @@
             loop: true,
             responsiveClass: true,
             autoplay: true,
+            autoplayTimeout: (30 * 1000), /* Slide Interval of 30s */
             smartSpeed: 800,
             nav: false,
             dots: true,
             center:true,
             margin: 0,
+            autoplayHoverPause: true,
             responsive: {
                 0: {
                     items: 1

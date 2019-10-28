@@ -2004,9 +2004,26 @@ footer h3 {
 
 /* about medicare */
 
+.small-or {
+  display: none;
+}
+
+.large-or {
+  display: block;
+}
+
+
 @media (max-width: 991px) {
   .sm-top-padding {
     margin-top: 20px !important;
+  }
+
+  .small-or {
+    display: block;
+  }
+
+  .large-or {
+    display: none;
   }
 }
 
