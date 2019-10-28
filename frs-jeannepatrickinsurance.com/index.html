@@ -42,6 +42,34 @@
       .lc {
         text-transform: lowercase;
       }
+
+      #hero-img {
+        background-image: url(./img/hero/omg-xxlg.png);
+      }
+
+      @media (max-width: 1850px) {
+        #hero-img {
+          background-image: url(./img/hero/omg-xlg.png);
+        }
+      }
+
+      @media (max-width: 1400px) {
+        #hero-img {
+          background-image: url(./img/hero/omg-lg.png);
+        }
+      }
+
+      @media (max-width: 1000px) {
+        #hero-img {
+          background-image: url(./img/hero/omg.png);
+        }
+      }
+
+      @media (max-width: 768px) {
+        #hero-img {
+          background-image: url(./img/hero/omg-mobile.png);
+        }
+      }
     </style>
 </head>
 
@@ -126,39 +154,16 @@
 
 <!-- start slideshow-->
 <div class="container-fluid main-slider">
-  <div class="row slider-fade">
-      <div class="owl-carousel owl-theme width-100">
-          <div class="text-center item cover-background bg-img" data-overlay-dark="7" data-background="img/banner/slide1.jpg">
-              <div class="absolute-middle-center caption">
+  <div class="row">
+      <div class="width-100">
+          <div id="hero-img" class="text-center item cover-background bg-img">
+              <!--div class="absolute-middle-center caption">
                   <div class="overflow-hidden">
-                      <h2 class="text-white no-margin">Jeanne Patrick <span>Insurance Solutions</span></h2>
-                      <h3 class="alt-font font-size28 sm-font-size18 text-white no-margin">for Seniors</h3><br><br>
-
+                      <h2 class="text-white no-margin">HMOs, PPOs, PDP, POS, Medicare Supplements <span>... OMG!!</span></h2>
+                      <h3 class="alt-font font-size28 sm-font-size18 text-white no-margin">This Stuff Is Confusing!</h3><br><br>
                   </div>
-              </div>
+              </div-->
           </div>
-          <!--div class="text-center item cover-background bg-img" data-overlay-dark="6" data-background="img/banner/slide2.jpg">
-              <div class="absolute-middle-center caption">
-                  <div class="overflow-hidden">
-                    <h3  class="text-white">Navigating Medicare</h3> <br>
-                      <a href="#about" class="butn">
-                          <span class="alt-font">Learn More</span>
-                      </a>
-                  </div>
-              </div>
-          </div-->
-          <div class="text-center item cover-background bg-img" data-overlay-dark="6" data-background="img/banner/slide3.jpg">
-              <div class="absolute-middle-center caption">
-                  <div class="overflow-hidden">
-                      <h1 class="text-white">Helping Seniors</h1>
-                      <p class="margin-30px-bottom sm-margin-20px-bottom sm-display-none">to navigate Medicare for over 15 years.</p>
-                      <a href="#about" class="butn">
-                          <span class="alt-font">Learn More</span>
-                      </a>
-                  </div>
-              </div>
-          </div>
-
       </div>
   </div>
 </div>
@@ -270,10 +275,8 @@
                 <div class="col-md-10">
                     <h5 class="font-size20 sm-font-size18 xs-font-size16 margin-15px-bottom xs-margin-10px-bottom text-dark-gray">PPO</h5>
                     <p class="no-margin">
-                     Preferred provider organization or PPO refers to health care providers
-                     that are part of a managed care network of hospitals, clinics, doctors,
-                     and pharmacies. They participate at a reduced rate, which means the health
-                     care system provides discounts to subscribers for their services.
+                     PPOs (Preferred Provider Organization), a Medicare Advantage plan,
+                     allow you to go outside of network at additional cost to you.
                     </p>
                 </div>
             </div>
@@ -284,15 +287,9 @@
                 <div class="col-md-10 order-2 order-lg-1">
                     <h5 class="font-size20 sm-font-size18 xs-font-size16 margin-15px-bottom xs-margin-10px-bottom text-dark-gray">Medicare Advantage & HMOs</h5>
                     <p class="no-margin">
-                      Medicare Advantage and Health Maintenance Organizations (HMOs) are various private health insurance
-                      policies underwritten by private carriers. An insurance professional
-                      can provide a side-by-side comparison of plans to determine if dental,
-                      vision, and hearing benefits are options that fit your health and lifestyle.
-                      There are variations of Medicare Advantage Plans; some are HMOs, which are health
-                      maintenance organizations. This means you have to work within their provider network.
-                      If you go outside that network, you pay for it 100% out of pocket.
-                      As not all possible HMO’s (Medicare Advantage) are available in every zip code,
-                      you must work with an accomplished Medicare Insurance professional.
+                      HMOs (Health Maintenance Organizations) are Medicare Advantage plans provided by private health insurance
+                      carriers. There are variations of Medicare Advantage Plans that require you receive services from
+                      within their provider network. If you go outside that network, you pay for it 100% out of pocket.
                     </p>
                 </div>
             </div>
@@ -303,9 +300,9 @@
                 <div class="col-md-10">
                     <h5 class="font-size20 sm-font-size18 xs-font-size16 margin-15px-bottom xs-margin-10px-bottom text-dark-gray">Medicare Supplements ("Med Supps")</h5>
                     <p class="no-margin">
-                      Medicare Supplements, also known as Med Sups, Medigap, or MedSupp insurance plans,
-                      will cover expenses that Original Medicare Part A and Part B do not. Medicare supplements
-                      offer you the essential element of peace of mind.
+                      Med Sups (Medicare Supplements), aka MediGap insurance plans,
+                      will cover expenses that Original Medicare Part A and Part B do not. Providing
+                      Essential peace of mind with no network or boundry restrictions.
                     </p>
                 </div>
             </div>
@@ -318,9 +315,15 @@
                     <h5 class="font-size20 sm-font-size18 xs-font-size16 margin-15px-bottom xs-margin-10px-bottom text-dark-gray">PDP (PRESCRIPTION DRUG PLANS)</h5>
                     <p class="no-margin">
                       A Prescription Drug (PDP) plan helps lower the costs of medications.
-                      Each plan has different formulary’s or drug lists,
-                      coverage levels for brand name and generic prescription drugs,
-                      and tiered co-pays. Your dedicated insurance agent will find the right one to meet your needs.
+                      <br>
+                      Each plan has:
+                      <ul>
+                        <li>- different formulary’s (drug lists)</li>
+                        <li>- different coverage levels for brand name and generic prescription drugs</li>
+                        <li>- tiered co-pays</li>
+                      </ul>
+
+                      Your dedicated insurance agent will find the right one to meet your needs.
                     </p>
                 </div>
             </div>

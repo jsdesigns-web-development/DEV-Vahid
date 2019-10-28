@@ -418,13 +418,13 @@ a.butn.white:hover, a.butn.white:active {
 
 @media only screen and (max-width: 1600px) {
   .main-slider {
-    height: 700px; } }
+    height: 600px; } }
 @media only screen and (max-width: 1400px) {
   .main-slider {
-    height: 650px; } }
+    height: 550px; } }
 @media only screen and (max-width: 1199px) {
   .main-slider {
-    height: 600px; }
+    height: 500px; }
 
   .slider-fade .owl-nav .owl-next {
     top: 45%; }
@@ -435,8 +435,8 @@ a.butn.white:hover, a.butn.white:active {
     font-size: 66px; } }
 @media only screen and (max-width: 991px) {
   .main-slider {
-    height: 575px;
-    margin-top: -68px; }
+    height: 480px;
+    margin-top: -18px; }
 
   .slider-fade .item .caption {
     top: 50%;
@@ -448,10 +448,16 @@ a.butn.white:hover, a.butn.white:active {
     font-size: 48px; }
   .owl-carousel .caption p {
     font-size: 16px; } }
+
+@media only screen and (min-width: 767px) {
+  .main-slider {
+    height: 400px;
+     } }
+
 @media only screen and (max-width: 767px) {
   .main-slider {
-    height: 550px;
-    margin-top: -63px; }
+    height: 767px;
+    margin-top: -90px; }
 
   .owl-carousel .caption {
     margin-top: 32px; }
@@ -462,7 +468,9 @@ a.butn.white:hover, a.butn.white:active {
       letter-spacing: 1px; } }
 @media only screen and (max-width: 575px) {
   .main-slider {
-    height: 480px; }
+    height: 575px;
+    margin-top: -80px;
+  }
     .main-slider .butn {
       padding: 8px 22px; }
 
@@ -471,11 +479,21 @@ a.butn.white:hover, a.butn.white:active {
     margin-top: 5px; } }
 @media only screen and (max-width: 480px) {
   .main-slider {
-    height: 450px; }
+    height: 480px;
+    margin-top: -70px;
+  }
 
   .owl-carousel .caption h1 {
     font-size: 20px;
     margin-top: 5px; } }
+
+@media only screen and (max-width: 370px) {
+  .main-slider {
+    height: 370px;
+    margin-top: -70px;
+
+  }
+ }
 /* ===================================
     Page title
 ====================================== */
