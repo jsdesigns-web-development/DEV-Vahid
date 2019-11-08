@@ -12,7 +12,9 @@
 -----------------------------------------------------------------*/
 
 /* == bootstrap == */
-@import url("plugins/bootstrap.min.css");
+/*@import url("plugins/bootstrap.min.css");*/
+@import url("plugins/bootstrap-modified.css");
+
 
 /* == animate Headline == */
 @import url("plugins/animate.css");
