@@ -406,23 +406,29 @@
         <div class="row">
             <div class="col-lg-12">
 
-                <form method="post" action="bat/rd-mailform.php" class="mailform off2">
+                <form method="POST" action="https://formspree.io/mkzglljx" class="mailform off2">
                     <input type="hidden" name="form-type" value="contact">
                     <div class="row">
                         <div class="col-md-12">
                           <p class="width-55 sm-width-75 xs-width-95">Or send a message from this form:</p>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" name="name" placeholder="Your Name:" data-constraints="@LettersOnly @NotEmpty">
+                            <input type="text" name="name" placeholder="Your Name:">
                         </div>
                         <div class="col-md-4">
-                            <input type="text" name="phone" placeholder="Telephone:" data-constraints="@Phone">
+                            <input type="text" name="phone" placeholder="Telephone:">
                         </div>
                         <div class="col-md-4">
-                            <input type="text" name="email" placeholder="Email:" data-constraints="@Email @NotEmpty">
+                            <input type="text" name="_replyto" placeholder="Email:">
+                        </div>
+                        <div style="display:none;">
+                          <input type="hidden" name="_subject" value="[ jeannepatrickinsurance.com ] You have a new message!" />
+                          <input type="hidden" name="topic" value="general contact" />
+                          <input type="hidden" name="_next" value="https://jeannepatrickinsurance.com" />
+                          <input type="text" name="_gotcha" style="display:none" />
                         </div>
                         <div class="col-md-12">
-                            <textarea name="message" rows="5" placeholder="Message:" data-constraints="@NotEmpty"></textarea>
+                            <textarea name="message" rows="5" placeholder="Message:"></textarea>
                         </div>
                         <div class="mfControls col-md-12">
                             <button type="submit" class="butn">Send Message</button>
