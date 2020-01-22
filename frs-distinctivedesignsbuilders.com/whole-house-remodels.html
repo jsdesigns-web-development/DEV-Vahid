@@ -54,6 +54,60 @@
 
     gtag('config', 'UA-124296218-5');
   </script>
+
+  <!-- ******************** SLIDESHOW CSS BEGINS ******************** -->
+  <style>
+    #slidshow {
+      margin: 20px 0;
+    }
+    .box-main {
+      height: 100vh;
+      min-width: 100%;
+      width: 100%;
+      z-index: 1;
+    }
+    .box-img {
+      text-align: center;
+      position: relative;
+      height: 95vh;
+      width: inherit;
+      z-index: 2;
+    }
+
+    #imgG {
+      height: inherit;
+    }
+    .slideshowButtons {
+      padding: 5px 20px;
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.6);
+      border: none;
+      font-size: 35px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.7);
+      transition: all .2s;
+      z-index: 5;
+    }
+    .slideshowButtons:hover {
+      color: rgba(255, 255, 255, 1);
+      font-weight: bold;
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0.8);
+    }
+    #previous {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      margin-right: 2% !important;
+    }
+    #next {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      margin-left: 2% !important;
+    }
+  </style>
+<!-- ******************** SLIDESHOW CSS ENDS ******************** -->
 </head>
 
 <body data-spy="scroll" data-target=".inner-link" data-offset="60">
@@ -139,22 +193,76 @@
     <!--/.container-->
 
 
-    <section class="text-center">
-      <div id="carouselExampleControls" class="carousel slide row jumbotron py-5 divSize" data-ride="carousel">
-        <div id="carousel-parent" class="carousel-inner">
-          <!-- Carousel Images go here -->
-        </div>
-
-        <div class="carousel-control-prev" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true" onclick="$('.carousel').carousel('prev')"></span>
-          <span class="sr-only">Previous</span>
-        </div>
-        <div class="carousel-control-next" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true" onclick="$('.carousel').carousel('next')"></span>
-          <span class="sr-only">Next</span>
-        </div>
+<!-- **************** SLIDESHOW BEGINS HERE ******************** -->
+<section id="slidshow">
+  <div class="box">
+    <div class="box-img">
+        <img src="" alt="Image" id="imgG">
+      <div class="box-indicators">
+          <button class="slideshowButtons" id="previous" onclick="changeImage('prev')">&#10594;</button>
+          <button class="slideshowButtons" id="next" onclick="changeImage('next')">&#10596;</button>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+<!-- **************** SLIDESHOW ENDS HERE ******************** -->
+
+
+
+<!-- ******************** SLIDESHOW JAVASCRIPT BEGINS ******************** -->
+<script>
+    // array of the sample images
+    var imgArray = [
+      "assets/images/wholehouse/attach51213_20190820_183236.jpg",
+      "assets/images/wholehouse/attach51214_20190820_183236.jpg",
+      "assets/images/wholehouse/attach51215_20190820_183236.jpg",
+      "assets/images/wholehouse/attach51216_20190820_183237.jpg",
+      "assets/images/wholehouse/attach51218_20190820_183237.jpg",
+      "assets/images/wholehouse/attach51219_20190820_183240.jpg",
+      "assets/images/wholehouse/attach51220_20190820_183240.jpg",
+      "assets/images/wholehouse/attach51221_20190820_183240.jpg",
+      "assets/images/wholehouse/attach51222_20190820_183439.jpg",
+      "assets/images/wholehouse/attach51223_20190820_183439.jpg",
+      "assets/images/wholehouse/attach51224_20190820_183439.jpg",
+      "assets/images/wholehouse/attach51225_20190820_183441.jpg",
+      "assets/images/wholehouse/attach51226_20190820_183441.jpg",
+      "assets/images/wholehouse/attach51227_20190820_183441.jpg",
+      "assets/images/wholehouse/attach51228_20190820_183602.jpg",
+      "assets/images/wholehouse/attach51229_20190820_183602.jpg",
+      "assets/images/wholehouse/attach51230_20190820_183602.jpg",
+      "assets/images/wholehouse/attach51231_20190820_183605.jpg",
+      "assets/images/wholehouse/attach51232_20190820_183605.jpg",
+      "assets/images/wholehouse/attach51233_20190820_183609.jpg",
+      "assets/images/wholehouse/attach51234_20190820_183609.jpg",
+      "assets/images/wholehouse/attach51235_20190820_183609.jpg",
+      "assets/images/wholehouse/attach51236_20190820_183616.jpg",
+      "assets/images/wholehouse/attach51237_20190820_183616.jpg",
+      "assets/images/wholehouse/attach51238_20190820_183616.jpg"
+    ];
+
+    // main image
+    var img = document.getElementById("imgG");
+
+    // image default display
+    img.src = imgArray[0];
+
+    var i = 0;
+
+    // main function
+    function changeImage(e) {
+        if (e == 'prev') {
+          i--;
+        } else if (e == 'next') {
+          i++;
+          i = i % imgArray.length;
+        }
+        if (i < 0) {
+          i = imgArray.length - 1;
+        }
+      img.src = imgArray[i];
+    }
+</script>
+<!-- ******************** SLIDESHOW JAVASCRIPT ENDS ******************** -->
 
 
     <section class="background-primary text-center py-6">
