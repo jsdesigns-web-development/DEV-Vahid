@@ -222,58 +222,7 @@
 
 
 <!-- ******************** SLIDESHOW JAVASCRIPT BEGINS ******************** -->
-<script>
-    // array of the sample images
-    var imgArray = [
-      "assets/images/wholehouse/attach51213_20190820_183236.jpg",
-      "assets/images/wholehouse/attach51214_20190820_183236.jpg",
-      "assets/images/wholehouse/attach51215_20190820_183236.jpg",
-      "assets/images/wholehouse/attach51216_20190820_183237.jpg",
-      "assets/images/wholehouse/attach51218_20190820_183237.jpg",
-      "assets/images/wholehouse/attach51219_20190820_183240.jpg",
-      "assets/images/wholehouse/attach51220_20190820_183240.jpg",
-      "assets/images/wholehouse/attach51221_20190820_183240.jpg",
-      "assets/images/wholehouse/attach51222_20190820_183439.jpg",
-      "assets/images/wholehouse/attach51223_20190820_183439.jpg",
-      "assets/images/wholehouse/attach51224_20190820_183439.jpg",
-      "assets/images/wholehouse/attach51225_20190820_183441.jpg",
-      "assets/images/wholehouse/attach51226_20190820_183441.jpg",
-      "assets/images/wholehouse/attach51227_20190820_183441.jpg",
-      "assets/images/wholehouse/attach51228_20190820_183602.jpg",
-      "assets/images/wholehouse/attach51229_20190820_183602.jpg",
-      "assets/images/wholehouse/attach51230_20190820_183602.jpg",
-      "assets/images/wholehouse/attach51231_20190820_183605.jpg",
-      "assets/images/wholehouse/attach51232_20190820_183605.jpg",
-      "assets/images/wholehouse/attach51233_20190820_183609.jpg",
-      "assets/images/wholehouse/attach51234_20190820_183609.jpg",
-      "assets/images/wholehouse/attach51235_20190820_183609.jpg",
-      "assets/images/wholehouse/attach51236_20190820_183616.jpg",
-      "assets/images/wholehouse/attach51237_20190820_183616.jpg",
-      "assets/images/wholehouse/attach51238_20190820_183616.jpg"
-    ];
-
-    // main image
-    var img = document.getElementById("imgG");
-
-    // image default display
-    img.src = imgArray[0];
-
-    var i = 0;
-
-    // main function
-    function changeImage(e) {
-        if (e == 'prev') {
-          i--;
-        } else if (e == 'next') {
-          i++;
-          i = i % imgArray.length;
-        }
-        if (i < 0) {
-          i = imgArray.length - 1;
-        }
-      img.src = imgArray[i];
-    }
-</script>
+  <script src="assets/js/slider.js"></script>
 <!-- ******************** SLIDESHOW JAVASCRIPT ENDS ******************** -->
 
 
@@ -309,41 +258,6 @@
   <script src="assets/js/zanimation.js"></script>
   <script src="assets/js/inertia.js"></script>
   <script src="assets/js/core.js"></script>
-  <script type="text/javascript">
-    function fileNames() {
-      return [
-        "attach51213_20190820_183236.jpg",
-        "attach51214_20190820_183236.jpg",
-        "attach51215_20190820_183236.jpg",
-        "attach51216_20190820_183237.jpg",
-        "attach51218_20190820_183237.jpg",
-        "attach51219_20190820_183240.jpg",
-        "attach51220_20190820_183240.jpg",
-        "attach51221_20190820_183240.jpg",
-        "attach51222_20190820_183439.jpg",
-        "attach51223_20190820_183439.jpg",
-        "attach51224_20190820_183439.jpg",
-        "attach51225_20190820_183441.jpg",
-        "attach51226_20190820_183441.jpg",
-        "attach51227_20190820_183441.jpg",
-        "attach51228_20190820_183602.jpg",
-        "attach51229_20190820_183602.jpg",
-        "attach51230_20190820_183602.jpg",
-        "attach51231_20190820_183605.jpg",
-        "attach51232_20190820_183605.jpg",
-        "attach51233_20190820_183609.jpg",
-        "attach51234_20190820_183609.jpg",
-        "attach51235_20190820_183609.jpg",
-        "attach51236_20190820_183616.jpg",
-        "attach51237_20190820_183616.jpg",
-        "attach51238_20190820_183616.jpg"
-      ];
-    }
-
-    function directoryPath() {
-      return "assets/images/wholehouse/";
-    }
-  </script>
   <script src="assets/js/main.js"></script>
 </body>
 

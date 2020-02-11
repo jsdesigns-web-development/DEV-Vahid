@@ -1,3 +1,5 @@
+console.log('main.js');
+
 // Preloader
 $.holdReady( true );
 
@@ -104,10 +106,10 @@ function initializeCarousel(){
   });
 }
 
-var imgsObj = generateImgsObj(fileNames(), directoryPath(), parentId());
-appendImgDiv(imgsObj);
-
-var lastImgIndex = imgsObj.count-1;
-//console.log(`img${lastImgIndex}`);
-
-document.getElementById(`img${lastImgIndex}`).onload = initializeCarousel();
+// var imgsObj = generateImgsObj(fileNames(), directoryPath(), parentId());
+// appendImgDiv(imgsObj);
+//
+// var lastImgIndex = imgsObj.count-1;
+// //console.log(`img${lastImgIndex}`);
+//
+// document.getElementById(`img${lastImgIndex}`).onload = initializeCarousel();
