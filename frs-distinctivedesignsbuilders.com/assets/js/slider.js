@@ -62,10 +62,6 @@ function directoryPath(page, sliderNum) {
 var defaultSlider = 0;
 var sliderNumber = defaultSlider;
 
-var thisPage = 'wholehouse';
-// var thisPage = 'kitchens'
-// var thisPage = 'baths'
-
 // array of the sample images
 var imgArray = fileNames(thisPage, sliderNumber).map(function(imgFileName){
   return "" + directoryPath(thisPage, sliderNumber) + imgFileName;
