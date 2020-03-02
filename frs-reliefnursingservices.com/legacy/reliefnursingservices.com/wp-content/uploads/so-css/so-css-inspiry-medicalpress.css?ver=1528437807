@@ -1,0 +1,89 @@
+.home-slider .slide-content .btn:hover {
+  background-color: #499947;
+}
+
+.home-slider .slide-content .btn {
+  background-color: #499947;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  background-color: #499947;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+  background-color: #499947;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  background-color: #499947;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+  background-color: #499947;
+}
+
+.home-features .features-intro .read-more:hover {
+  background-color: #499947;
+}
+
+.home-features .features-intro .read-more {
+  background-color: #499947;
+}
+
+#header {
+  margin-top: -4px;
+  padding-top: 5px;
+  padding-bottom: 12px;
+}
+
+.header-top p {
+  line-height: 130%;
+  font-size: 18px;
+  letter-spacing: 0px;
+  word-spacing: 1px;
+  font-family: Arial;
+}
+
+.appoint-var-three.clearfix {
+  background-color: #ffffff;
+}
+
+#app-name.required {
+  color: #ffffff;
+}
+
+.appoint-var-three .appointment-form input[type="submit"]:hover {
+  background-color: #08ae2f;
+}
+
+.appoint-var-three .appointment-form input[type="submit"] {
+  background-color: #499947;
+}
+
+.social-icon ul li .fa {
+  background-color: #499947;
+}
+
+.social-icon ul li .fa:hover {
+  background-color: #08ae2f;
+}
+
+#contact-form-submit {
+  background-color: #499947;
+}
+
+#contact-form-submit:hover {
+  background-color: #08ae2f;
+}
+
+span {
+  color: #ffffff;
+}
+
+.confit-hours {
+  color: #ffffff;
+}
+
+.col-sm-6 {
+  color: #ffffff;
+}
