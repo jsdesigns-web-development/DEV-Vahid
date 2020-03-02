@@ -3238,6 +3238,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner {
   text-shadow: none
 }
 
+/* TITLE caption */
 .slider-caption h2 {
   font-size: 4rem;
   letter-spacing: 2px;
@@ -3247,6 +3248,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner {
   margin-bottom: 0
 }
 
+/* SUBTITLE caption */
 .slider-caption p {
   margin-top: 30px;
   margin-bottom: 10px;
