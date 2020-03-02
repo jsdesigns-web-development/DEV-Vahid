@@ -3230,7 +3230,9 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .15);
   -webkit-transition: top .3s ease;
   -o-transition: top .3s ease;
-  transition: top .3s ease
+  transition: top .3s ease;
+  /* background-color: rgba(255, 255, 255, .35);
+  padding: .75em; */
 }
 
 .slider-caption:not(.dark), .slider-caption:not(.dark) h2 {
@@ -3245,14 +3247,20 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1;
-  margin-bottom: 0
+  margin-bottom: 0;
+  /* background-color: rgba(255, 255, 255, .35);
+  padding: .75em; */
+  /* text-shadow: 1em 1em 1px rgba(255, 255, 255, 1); */
 }
 
 /* SUBTITLE caption */
 .slider-caption p {
   margin-top: 30px;
   margin-bottom: 10px;
-  font-size: 24px
+  font-size: 24px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, .35);
+  padding: .75em;
 }
 
 .slider-caption.slider-caption-right {
