@@ -1,8 +1,28 @@
 /* ----------------------------------------------------------------
 	Responsive CSS
 -----------------------------------------------------------------*/
+/* about us */
 
+.container .h1 {
+	font-size:xx-large !important;
+    font-weight: bolder !important;
+}
 
+#line {
+	width: 250px; 
+	height: 2px; 
+	background-color: #1ABC9C; 
+	margin: 2px auto;
+	opacity: 0.5; 
+	border-radius: 50%;
+}
+
+@media(max-width: 520px) {
+	.container .h1 {
+		font-size:large !important;
+		font-weight: normal !important;
+	}
+}
 @media (max-width: 1199.98px) {
 
 	canvas {
