@@ -1795,3 +1795,40 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991.98px
 	#logo a.retina-logo { display: inline-block; }
 }
 
+
+/* home page banner responsiveness for deffirnt devices */
+
+@media(max-width: 630px) {
+	#slider{
+       height: 45vh !important;
+	}
+
+	.home-title{
+		margin-bottom: 135px !important;
+	}
+}
+
+/* @media(width: 411px) {
+	#slider{
+		height: 35vh !important;
+	 }
+} */
+
+@media(max-width: 320px) {
+	.small-screen-title {
+        font-size: 0.5rem !important;
+	 }
+} 
+
+@media(max-width: 414px) {
+	#slider{
+		height: 34vh !important;
+	 }
+}
+
+/* @media(width: 375px) {
+	#slider{
+		height: 35vh !important;
+	 }
+} */
+
