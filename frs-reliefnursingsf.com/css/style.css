@@ -1565,6 +1565,12 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
 	 font-size: 25px;
  }
 }
+
+@media(max-width: 412px){
+	.form-subtitle {
+		font-size: 20px;
+	}
+   }
 #primary-menu.sub-title > ul > li:hover > a,
 #primary-menu.sub-title > ul > li.current > a,
 #primary-menu.sub-title > div > ul > li:hover > a,
