@@ -1551,6 +1551,14 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
 	text-transform: capitalize;
 }
 
+.form-subtitle {
+	display: block;
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: 400;
+	color: #888;
+	text-transform: capitalize;
+}
 #primary-menu.sub-title > ul > li:hover > a,
 #primary-menu.sub-title > ul > li.current > a,
 #primary-menu.sub-title > div > ul > li:hover > a,
