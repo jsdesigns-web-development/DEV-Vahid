@@ -1563,6 +1563,10 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
 @media(max-width: 720px){
  .form-subtitle {
 	 font-size: 25px;
+	 
+ }
+ .form-btn{
+	 width: 100% !important;
  }
 }
 
@@ -1570,6 +1574,7 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
 	.form-subtitle {
 		font-size: 20px;
 	}
+
    }
 #primary-menu.sub-title > ul > li:hover > a,
 #primary-menu.sub-title > ul > li.current > a,

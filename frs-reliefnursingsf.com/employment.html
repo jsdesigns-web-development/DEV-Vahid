@@ -138,29 +138,28 @@
 		</section><!-- #page-title end -->
 
 		<div class="container mt-3">
-			<div class="container clearfix text-center">
-				<br>
-				<h2 style="color: #499947; margin-top: 15px;">Application For Employment</h2>
-				<span class="form-subtitle">An equal opportunity employer</span>
-			</div>
 			<div class="row">
-				<P style="margin: 10px auto; font-size: 18px; text-align:center;">
-				   Consideration is given to all applicants without discrimination to race, color,
-				   creed, sex, age, natinal origan, handicap 
-				   or veteran status.
-				   Filling out this form is subject to review and approval of Relief Nursing Services, Inc
-				   and does not in anyway guarantees employment.
-				</P>
-			</div> 
+				<br>
+				<h2 class="col-12" style="color: #499947; margin-top: 15px;">Application For Employment</h2>
+				<p class="col-12 form-subtitle">An equal opportunity employer</p>
+				<P class="col-12" style="font-size: 15px; padding-top: 15px;">
+					Consideration is given to all applicants without discrimination to race, color,
+					creed, sex, age, natinal origan, handicap 
+					or veteran status.
+					Filling out this form is subject to review and approval of Relief Nursing Services, Inc
+					and does not in anyway guarantees employment.
+				 </P>
+			</div>
 			<!-- Employment Form starts -->
 			<br>
 
                <form action="">
 				   <div class="row">
-					<h4>Position Applied For:</h4>
 				   </div>
 				   <!-- Title ends -->
-				   <div class="form-group row">
+				   <div class="form-group">
+					<h4>Position Applied For:</h4>
+
 						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="checkbox" id="rn" value="rn">
 							<label class="form-check-label" for="rn">RN</label>
@@ -249,12 +248,12 @@
 
 				   <div class="col-lg-6 col-md-12 mt-4">
 						<label for="email">Email Address:</label>
-						<input class="sm-form-control" type="email" id="cell">
+						<input id="email" class="sm-form-control" type="email" id="cell">
 				   </div>
 
 				   <div class="col-lg-6 col-md-12 mt-4">
-						<label for="apt-number">FAX:</label>
-						<input class="sm-form-control" type="tel" id="fax">
+						<label for="fax">FAX:</label>
+						<input id="fax" class="sm-form-control" type="tel" id="fax">
 				   </div>
 
 				   <div class="col-lg-12 mt-4">
@@ -283,19 +282,19 @@
 					<textarea class="required sm-form-control" id="q3" name="q2" rows="4" cols="15"></textarea>				  
 				   </div>
 
-				   <div class="col-lg-12 col-md-12 mt-4">
+				<div class="col-lg-12 col-md-12 mt-4">
 					<label for="q4">If employed by Relief Nursing services, Inc, when are you available to start working?</label>
-					<input required class="sm-form-control" type="date" id="date-of-application">
+					<input id="q4" required class="sm-form-control" type="date" id="date-of-application">
 				</div>
 
 				<div class="col-lg-6 col-md-12 mt-4">
-					<label for="q4">Made of transportation:</label>
-					<input required class="sm-form-control" type="text" id="date-of-application">
+					<label for="q5">Made of transportation:</label>
+					<input id="q5" required class="sm-form-control" type="text" id="date-of-application">
 				</div>
 
 				<div class="col-lg-6 col-md-12 mt-4">
-					<label for="q4">Incurance Coverage</label>
-					<input required class="sm-form-control" type="text" id="date-of-application">
+					<label for="q7">Incurance Coverage</label>
+					<input id="q7" required class="sm-form-control" type="text" id="date-of-application">
 				</div>
 
 				<div class="col-lg-12 mt-4">
@@ -304,7 +303,7 @@
 				</div>
  
 			   <div class="col-lg-12 mt-4">
-				<label for="q3">
+				<label for="q6">
 					Have you served in the armed forces of the united state? 
 				</label> <br>
 				<div class="form-check form-check-inline">
@@ -316,21 +315,21 @@
 					<label class="form-check-label" for="no">No:</label>
 				  </div> <br>
 				  <span style="font-size: large;" class="text-muted">Branch of Service</span>
-				  <input type="text"class="sm-form-control">
+				  <input id="q6" type="text"class="sm-form-control">
 			   </div>
 
 			   
 			   <div class="col-lg-12 mt-4">
 
-				<label for="q5">if you are not a United State citizen, do you have a legal right to 
+				<label>if you are not a United State citizen, do you have a legal right to 
 					work in the united state?
 				</label>
 				<br>
 				<div class="form-check form-check-inline">
 					<input class="form-check-input" type="radio" name="yesNo3" id="yes" value="yes">
 					<label class="form-check-label" for="yes">Yes:</label>
-					</div>
-					<div class="form-check form-check-inline">
+				</div>
+				<div class="form-check form-check-inline">
 					<input class="form-check-input" type="radio" name="yesNo3" id="no" value="no">
 					<label class="form-check-label" for="no">No:</label>
 				</div>
@@ -343,18 +342,144 @@
 
 		</div>
 		<!-- form group row ends -->
-
+						<hr>
 					<!-- work experience -->
-					<div class="row mt-5">
-						 <p>
-							<span class="h4">Work Experince: </span><br> 
-							<span class="text-muted">(List most recent employment first, make sure to include all nursing related experience)</span>
-					    </p>
-					</div>
 			   <div class="form-group row">
-                   
+				<p class="ml-1 col-12">
+					<span class="h4">Work Experince: </span><br> 
+					<span class="text-muted">(List most recent employment first, make sure to include all nursing related experience)</span>
+				</p>
+				<div class="col-lg-4">
+					<label for="employer-name">Employer's Name:</label>
+					  <input required type="text"  class="sm-form-control" id="employer-name">
+				  </div>
+
+				  <div class="col-lg-4">
+					<label for="employer-address">Address:</label>
+					  <input required class="sm-form-control" type="text" id="employer-address">
+				  </div>
+				  <div class="col-lg-4">
+					<label for="employer-contact">Telephone and a point of contacnt:</label>
+					  <input required class="sm-form-control" type="tel" id="employer-contact">
+				  </div>
+
+				  <div class="col-lg-12 mt-4">
+					<label for="job-title">Job title and brief description:</label>
+					<textarea class="required sm-form-control" id="q1" name="job-title" rows="4" cols="15"></textarea>				  
+				 </div>
+				 <div class="col-lg-6 mt-4">
+					<label for="supervisor-name">Supervisor Name:</label>
+					  <input required class="sm-form-control" type="text" id="supervisor-name">
+				  </div>
+				  <div class="col-lg-6 mt-4">
+					<label for="supervisor-telephone">Supervisor Telephone Number:</label>
+					  <input required class="sm-form-control" type="tel" id="supervisor-telephone">
+				  </div>
+                  <div class="col-12  mt-4"><label>Date of employed:</label> </div>
+				  <div class="col-lg-6 mt-1">
+					<label for="from">From:</label>
+					  <input required class="sm-form-control" type="date" id="from">
+				  </div>
+				  <div class="col-lg-6 mt-1">
+					<label for="to">To:</label>
+					  <input required class="sm-form-control" type="date" id="to">
+				  </div>
+
+				  <div class="col-lg-12 mt-4">
+					<label for="reason">Reason for leavingL</label>
+					  <input class="sm-form-control" type="text" id="reason">
+				  </div>
+
+				  <div class="col-12 mt-4">
+					  <label for="">May we contanct your former employer?</label> <br>
+
+					  <div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="yesNo4" id="yes" value="yes">
+						<label class="form-check-label" for="yes">Yes:</label>
+					</div>
+					<div class="form-check form-check-inline ">
+						<input class="form-check-input" type="radio" name="yesNo4" id="no" value="no">
+						<label class="form-check-label" for="no">No:</label>
+					</div>
+				  </div>
 			   </div>
 			   <!-- work experience ends -->
+			   <hr>
+			   <!-- Education starst -->
+			   <div class="form-group row">
+				<p class="ml-1 col-12">
+					<span class="h4">Education: </span><br> 
+					<span class="text-muted">(List most recent school attended first, including high school and all post school education)</span>
+				</p>
+  
+				<!-- school 1 -->
+				<div class="col-lg-4">
+					<label for="school-name">School's name:</label>
+					  <input required type="text"  class="sm-form-control" id="school-name" placeholder="Collage / University / Vocational">
+				  </div>
+
+				  <div class="col-lg-4">
+					<label for="class">Type / Class:</label>
+					  <input required class="sm-form-control" type="text" id="class">
+				  </div>
+				  <div class="col-lg-4">
+					<label for="school-add">Address:</label>
+					  <input required class="sm-form-control" type="tel" id="school-add">
+				  </div>
+			   </div>
+               <div class="group-form row">
+					<div class="col-12  mt-4"><label>Date Attended:</label> </div>
+					<div class="col-lg-6 mt-1">
+					<label for="from">From:</label>
+						<input required class="sm-form-control" type="date" id="from">
+					</div>
+					<div class="col-lg-6 mt-1">
+					<label for="to">To:</label>
+						<input required class="sm-form-control" type="date" id="to">
+					</div>
+			   </div>
+			   <div class="form-group row mt-4">
+				<div class="col-lg-8">
+					<label for="class">Degree:</label>
+					  <input required class="sm-form-control" type="text" id="class">
+				  </div>
+
+				  <div class="col-4 mt-4">
+					<label for="">Graduated?</label> <br>
+
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="yesNo5" id="yes" value="yes">
+					  <label class="form-check-label" for="yes">Yes:</label>
+				  </div>
+				  <div class="form-check form-check-inline ">
+					  <input class="form-check-input" type="radio" name="yesNo5" id="no" value="no">
+					  <label class="form-check-label" for="no">No:</label>
+				  </div>
+				</div>
+			   </div>
+			   <!-- / -->
+				<!-- Criminal records -->
+                <div class="form-group row" style="border: 1px solid #F5F5F5; background-color: #F5F5F5; padding-bottom:25px;">
+					<div class="col-12 mt-4">
+						<label for="">have you ever been convicted of a criminal offense by any court of low?</label> <br>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="yesNo6" id="yes" value="yes">
+						  <label class="form-check-label" for="yes">Yes:</label>
+					  </div>
+					  <div class="form-check form-check-inline ">
+						  <input class="form-check-input" type="radio" name="yesNo6" id="no" value="no">
+						  <label class="form-check-label" for="no">No:</label>
+					  </div>
+					</div>
+					
+					<div class="col-lg-12">
+						<label for="init">Initial:</label>
+						  <input required class="sm-form-control" type="text" id="init">
+					  </div>
+				</div>
+				<div class="col_full">
+					<button class="form-btn button button-3d nomargin" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Application</button>
+				</div>	
 			   </form>
 			    
 			<!-- / Employment Form Ends -->
