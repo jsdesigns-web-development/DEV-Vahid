@@ -187,10 +187,10 @@ iframe { border: none !important; }
 /* ----------------------------------------------------------------
 	Basic Layout Styles
 -----------------------------------------------------------------*/
-  .shadow-typo {
+  /* .shadow-typo {
 		   text-shadow: 3px 1px 2px #e7eef1, 8px 8px 0px rgba(0,0,0,0.1);
 		   font-weight: bold;
-   }
+   } */
 
 h1,
 h2,
