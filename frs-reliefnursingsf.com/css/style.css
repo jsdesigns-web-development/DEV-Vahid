@@ -261,6 +261,12 @@ small { font-family: 'Lato', sans-serif; }
 		font-size: 1.5rem !important;
 	}
 }
+
+@media(min-width: 770px){
+	.home-title{
+		font-size: 3rem;
+	}
+}
 /* ----------------------------------------------------------------
 	Helper Classes
 -----------------------------------------------------------------*/
