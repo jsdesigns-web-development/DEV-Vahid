@@ -11751,12 +11751,10 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	position: fixed;
 	width: 40px;
 	height: 40px;
-	/* background-color: rgba(0,0,0,0.3); */
-	background-color: white;
-	font-size: 20px;
+	font-size: 2rem;
 	line-height: 36px;
 	text-align: center;
-	color: #FFF;
+	color: #222;
 	top: auto;
 	left: auto;
 	right: 30px;
@@ -11773,7 +11771,10 @@ body:not(.device-touch) #gotoTop {
 
 .stretched #gotoTop { bottom: 30px; }
 
-#gotoTop:hover { background-color: var(--relief-green); }
+#gotoTop:hover {
+	 background-color: var(--relief-green);
+	 color: #EEE; 
+	}
 
 
 /* ----------------------------------------------------------------
