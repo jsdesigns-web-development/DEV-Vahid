@@ -246,7 +246,21 @@ form { margin-bottom: 30px; }
 
 small { font-family: 'Lato', sans-serif; }
 
+.pages-title-text {
+	font-size: 3rem !important;
+}
 
+@media(max-width: 460px){
+	.pages-title-text {
+		font-size: 2rem !important;
+	}
+}
+
+@media(max-width: 345px){
+	.pages-title-text {
+		font-size: 1.5rem !important;
+	}
+}
 /* ----------------------------------------------------------------
 	Helper Classes
 -----------------------------------------------------------------*/
