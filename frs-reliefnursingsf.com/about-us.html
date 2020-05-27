@@ -50,12 +50,12 @@
 		.counters > div:nth-child(3) .overlay { background-color: rgba(198, 40, 40, 0.8); }
 		.counters > div:nth-child(4) .overlay { background-color: rgba(183, 28, 28, 0.8); }
 
-		.counters > div:hover .overlay { background-color: rgba(0, 0, 0, 0) }
+		.counters > div:hover .overlay { background-color: rgba(0, 0, 0, 0) }		
 	</style>
 
 </head>
 
-<body class="stretched" data-loader-html="<div id='css3-spinner-svg-pulse-wrapper'><svg id='css3-spinner-svg-pulse' version='1.2' height='210' width='550' xmlns='https://www.w3.org/2000/svg' viewport='0 0 60 60' xmlns:xlink='https://www.w3.org/1999/xlink'><path id='css3-spinner-pulse' stroke='#DE6262' fill='none' stroke-width='2' stroke-linejoin='round' d='M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210' /></svg></div>">
+<body class="stretched" onload="checkWidth()" onresize="checkWidth()" data-loader-html="<div id='css3-spinner-svg-pulse-wrapper'><svg id='css3-spinner-svg-pulse' version='1.2' height='210' width='550' xmlns='https://www.w3.org/2000/svg' viewport='0 0 60 60' xmlns:xlink='https://www.w3.org/1999/xlink'><path id='css3-spinner-pulse' stroke='#DE6262' fill='none' stroke-width='2' stroke-linejoin='round' d='M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210' /></svg></div>">
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -75,7 +75,7 @@
 						<ul>
 							<!-- <li><a href="#"><i class="far fa-clock mt-3"></i> Timings</a></li> -->
 							<li><a href="tel:1-650-994-2234"><i class="fas fa-phone-alt mt-3"></i>&nbsp;(650) 994-2234</a></li>
-							<li><a href="mailto:ask@reliefnursingservices.com" class="nott"><i class="fas fa-envelope mt-3"></i></i>&nbsp;ask@reliefnursingservices.com</a></li>
+							<li><a href="mailto:ask@reliefnursingsf.com" class="nott"><i class="fas fa-envelope mt-3"></i></i>&nbsp;ask@reliefnursingsf.com</a></li>
 						</ul>
 					</div><!-- .top-links end -->
 
@@ -94,7 +94,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="./employment.html" data-scrollto="#booking-appointment-form" data-offset="100" data-easing="easeInOutExpo" data-speed="1200" class="bgcolor" style="color:#fff;">Apply for Work</a>
+								<a href="./careers.html" data-scrollto="#booking-appointment-form" data-offset="100" data-easing="easeInOutExpo" data-speed="1200" class="bgcolor" style="color:#fff;">Apply for Work</a>
 							</li>						</ul>
 					</div>
 
@@ -120,8 +120,8 @@
 						<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="index.html" class="standard-logo"><img src="./images/largeLogo.png" alt="Relief Nursing Services Logo"></a>
-						<a href="index.html" class="retina-logo"><img src="./images/logo.png" alt="Relief Nursing Services Logo"></a>
+						<a href="index.html" class="standard-logo"><img src="./images/retinaLogo.png" alt="Relief Nursing Services Logo"></a>
+						<a href="index.html" class="retina-logo"><img src="./images/retinaLogo.png" alt="Relief Nursing Services Logo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
@@ -132,7 +132,7 @@
 							<li><a href="./index.html"><div>Home</div></a></li>
 							<li  class="current"><a href="./about-us.html"><div>About Us</div></a></li>
 							<li><a href="./services.html"><div>Services</div></a></li>
-							<li><a href="./employment.html"><div>Careers</div></a></li>
+							<li><a href="./careers.html"><div>Careers</div></a></li>
 							<li><a href="./contact.html"><div>Contact</div></a></li>
 						</ul>
 
@@ -180,7 +180,7 @@
 					<div class="">
 
 						<div class="heading-block fancy-title nobottomborder title-bottom-border">
-							<h4><span><i class="fas fa-user-nurse fa-2x"></i></span> Nursing Services,<span> INC.</span></h4>
+							<h4><span><i class="fas fa-user-nurse fa-2x"></i></span> About<span> the agency.</span></h4>
 						</div>
 						<p>Accredited by The Joint Commission and a proud member of the Better Business Bureau is locally owned and has been in business since 1997. We are an on-call nursing agency that has a team of staffing coordinators that will assist your family, facility, or hospital with your staffing needs. Relief Nursing Services, Inc. provides reliable and dependable Registered Nurses, Licensed Vocational Nurses, Certified Nursing Assistants, Caregivers, Homemakers, and Companions to meet the challenging needs of the client and their families.</p>
 
@@ -191,7 +191,7 @@
 						<div class="heading-block fancy-title nobottomborder title-bottom-border">
 							<h4><span><i class="fas fa-certificate fa-2x"></i> </span> 24 Hours a day, <span>7 days a week.</span></h4>
 						</div>
-						<p>RNSI is the only agency in the San Francisco Bay Area affiliated with Providence Vocational School, a school that trains Caregivers to become Certified Nursing Assistants, and where our nurses go for skills enhancement and training and state certification.</p>
+						<p>Relief Nursing Services, Inc. is the only agency in the San Francisco Bay Area affiliated with Providence Vocational School, a school that trains Caregivers to become Certified Nursing Assistants, and where our nurses go for skills enhancement and training and state certification.</p>
 
 					</div>
 
@@ -200,261 +200,54 @@
 				<div class="section nomargin" style="background-color:#fff;">
 					<div class="container clearfix">
                        <div class="row">
-						   <div class="col-lg-4 text-center"><img src="./images/Joint-Commission.jpg" alt="Joint-Commission"/>
-							<span>Accredited by The Joint Commission</span>
-						</div>
-						   <div class="col-lg-4 text-center"><img src="./images/Senate-1-810x1024.png" alt="Joint-Commission"/>
-						   <span>Recognized by Senate</span>
-						</div>
-						   <div class="col-lg-4 text-center"><img src="./images/BBB-LOGO.png" alt="Joint-Commission"/>
-						<span>Accredited by Better Business Bureau</span>
-						</div>
+						   <div class="col-lg-3 text-center mb-5">
+							   <div class="row justify-content-center">
+								   <p>Accredited by The Joint Commission</p>
+								</div>
+								<div class="row justify-content-center">
+									<img src="./images/Joint-Commission.jpg" alt="Joint-Commission" style="max-width: 200px;" />
+							   </div>
+							</div>
+							<div class="col-lg-3 offset-lg-1 text-center">
+								<!-- <div id="line1" class="border-bottom-md"></div> -->
+								<hr id="line1">
+								<div class="row justify-content-center">
+									<p>Recognized by Senate</p>
+								</div>
+								<div class="row justify-content-center">
+									<img src="./images/Senate-1-810x1024.png" alt="Joint-Commission" style="max-width: 200px;"/>
+								</div>
+							</div>
+							<div class="col-lg-3 offset-lg-1 text-center">
+								<!-- <div id="line2" class="border-bottom-md"></div> -->
+								<hr id="line2">
+								<div class="row justify-content-center">
+									<p>Accredited by Better Business Bureau</p>
+								</div>
+								<div class="row justify-content-center">
+									<img src="./images/BBB-LOGO.png" alt="Joint-Commission" style="max-width: 200px;"/>
+								</div>
+							</div>
 					   </div>
 
 					</div>
 				</div>
-
-		<!-- <div class="row counters clearfix nobottommargin topmargin-sm align-items-stretch">
-
-			<div class="col-lg-3 col-md-6 dark center col-padding" style="background-image: url('images/about-us/counters/1.jpg');">
-				<div>
-					<div class="overlay"></div>
-					<div style="position: relative; z-index: 1;">
-						<i class="i-plain i-xlarge divcenter icon-medical-i-surgery"></i>
-						<div class="counter counter-lined"><span data-from="100" data-to="42762" data-refresh-interval="50" data-speed="2300"></span></div>
-						<h5>of Treatments Made</h5>
-					</div>
-				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-6 dark center col-padding" style="background-image: url('images/about-us/counters/2.jpg');">
-				<div>
-					<div class="overlay"></div>
-					<div style="position: relative; z-index: 1;">
-						<i class="i-plain i-xlarge divcenter icon-medical-i-respiratory"></i>
-						<div class="counter counter-lined"><span data-from="3000" data-to="21500" data-refresh-interval="100" data-speed="2500"></span></div>
-						<h5>Cured Patients</h5>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-3 col-md-6 dark center col-padding" style="background-image: url('images/about-us/counters/3.jpg');">
-				<div>
-					<div class="overlay"></div>
-					<div style="position: relative; z-index: 1;">
-						<i class="i-plain i-xlarge divcenter icon-medical-i-social-services"></i>
-						<div class="counter counter-lined"><span data-from="20" data-to="408" data-refresh-interval="25" data-speed="3500"></span>K</div>
-						<h5>Satisfied Customers</h5>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-3 col-md-6 dark center col-padding" style="background-image: url('images/about-us/counters/4.jpg');">
-				<div>
-					<div class="overlay"></div>
-					<div style="position: relative; z-index: 1;">
-						<i class="i-plain i-xlarge divcenter icon-medical-i-ambulance"></i>
-						<div class="counter counter-lined"><span data-from="60" data-to="140" data-refresh-interval="20" data-speed="2700"></span></div>
-						<h5>ambulance Available</h5>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="section notopmargin" style="background: #FFF url('images/about-us/1.jpg') right center no-repeat / cover;">
-
-			<div class="d-block d-md-block d-lg-none" style="background-color: rgba(238,238,238,0.9); position: absolute; top: 0;left: 0; z-index: 1;width: 100%; height: 100%;"></div>
-
-			<div class="container clearfix">
-
-				<div class="row clearfix">
-					<div class="col-lg-5" data-lightbox="gallery">
-						<div class="heading-block nobottomborder bottommargin-sm">
-							<h3 class="nott ls0">What We do Actualy</h3>
-						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur necessitatibus placeat numquam enim adipisci nostrum facilis distinctio modi, cupiditate laborum ea eius repellendus? Obcaecati saepe numquam pariatur aliquid, aspernatur necessitatibus dolores harum quos eum esse, laudantium odit alias, iste dolorem!</p>
-						<div class="feature-box fbox-plain">
-							<div class="fbox-icon" data-animate="fadeIn">
-								<a href="#"><i class="icon-medical-i-womens-health"></i></a>
-							</div>
-							<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
-						</div>
-
-						<div class="feature-box fbox-plain">
-							<div class="fbox-icon" data-animate="fadeIn">
-								<a href="#"><i class="icon-medical-i-ultrasound"></i></a>
-							</div>
-							<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
-						</div>
-
-						<div class="feature-box fbox-plain bottommargin-sm">
-							<div class="fbox-icon" data-animate="fadeIn">
-								<a href="#"><i class="icon-medical-i-cath-lab"></i></a>
-							</div>
-							<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="opening-table">
-							<div class="heading-block bottommargin-sm nobottomborder">
-								<h4>Opening Hours</h4>
-								<span>Lorem ipsum dolor sit amet, consecte adipisicing elit molestiae non.</span>
-							</div>
-							<div class="time-table-wrap clearfix">
-								<div class="row time-table">
-									<h5 class="col-lg-5">Monday</h5>
-									<span class="col-lg-7">8:00am - 11:00pm</span>
-								</div>
-								<div class="row time-table">
-									<h5 class="col-lg-5">Tuesday</h5>
-									<span class="col-lg-7">8:00am - 11:00pm</span>
-								</div>
-								<div class="row time-table">
-									<h5 class="col-lg-5">Wednesday</h5>
-									<span class="col-lg-7">8:00am - 11:00pm</span>
-								</div>
-								<div class="row time-table">
-									<h5 class="col-lg-5">Thursday</h5>
-									<span class="col-lg-7">8:00am - 11:00pm</span>
-								</div>
-								<div class="row time-table">
-									<h5 class="col-lg-5">Friday</h5>
-									<span class="col-lg-7">8:00am - 11:00pm</span>
-								</div>
-								<div class="row time-table">
-									<h5 class="col-lg-5">Saturday</h5>
-									<span class="col-lg-7">8:00am - 1:30pm</span>
-								</div>
-								<div class="row time-table">
-									<h5 class="col-lg-5">Sunday</h5>
-									<span class="col-lg-7 color t600">Closed</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="container clearfix">
-			<div class="heading-block center nobottomborder">
-				<h3>Meet our Team of Specialists<span>.</span></h3>
-				<span>We make sure that your Life are in Good Hands.</span>
-			</div>
-
-			<div id="oc-team" class="owl-carousel team-carousel carousel-widget" data-margin="30" data-nav="true" data-pagi="true" data-items-xs="1" data-items-sm="2" data-items-lg="3" data-items-xl="4">
-
-				<div class="team">
-					<div class="team-image">
-						<img src="../../demos/medical/images/doctors/1.jpg" alt="Dr. John Doe">
-					</div>
-					<div class="team-desc">
-						<div class="team-title"><h4>Dr. John Doe</h4><span>Cardiologist</span></div>
-					</div>
-				</div>
-
-				<div class="team">
-					<div class="team-image">
-						<img src="../../demos/medical/images/doctors/2.jpg" alt="Dr. John Doe">
-					</div>
-					<div class="team-desc">
-						<div class="team-title"><h4>Dr. Bryan Mcguire</h4><span>Orthopedist</span></div>
-					</div>
-				</div>
-
-				<div class="team">
-					<div class="team-image">
-						<img src="../../demos/medical/images/doctors/3.jpg" alt="Dr. John Doe">
-					</div>
-					<div class="team-desc">
-						<div class="team-title"><h4>Dr. Mary Jane</h4><span>Neurologist</span></div>
-					</div>
-				</div>
-
-				<div class="team">
-					<div class="team-image">
-						<img src="../../demos/medical/images/doctors/4.jpg" alt="Dr. John Doe">
-					</div>
-					<div class="team-desc">
-						<div class="team-title"><h4>Dr. Silvia Bush</h4><span>Dentist</span></div>
-					</div>
-				</div>
-
-				<div class="team">
-					<div class="team-image">
-						<img src="../../demos/medical/images/doctors/6.jpg" alt="Dr. John Doe">
-					</div>
-					<div class="team-desc">
-						<div class="team-title"><h4>Dr. Hugh Baldwin</h4><span>Cardiologist</span></div>
-					</div>
-				</div>
-
-				<div class="team">
-					<div class="team-image">
-						<img src="../../demos/medical/images/doctors/7.jpg" alt="Dr. John Doe">
-					</div>
-					<div class="team-desc">
-						<div class="team-title"><h4>Dr. Erika Todd</h4><span>Neurologist</span></div>
-					</div>
-				</div>
-
-				<div class="team">
-					<div class="team-image">
-						<img src="../../demos/medical/images/doctors/8.jpg" alt="Dr. John Doe">
-					</div>
-					<div class="team-desc">
-						<div class="team-title"><h4>Dr. Randy Adams</h4><span>Dentist</span></div>
-					</div>
-				</div>
-
-				<div class="team">
-					<div class="team-image">
-						<img src="../../demos/medical/images/doctors/9.jpg" alt="Dr. John Doe">
-					</div>
-					<div class="team-desc">
-						<div class="team-title"><h4>Dr. Alan Freeman</h4><span>Eye Specialist</span></div>
-					</div>
-				</div>
-
-			</div>
-
-		</div> -->
-
-	</div>
-
-</section><!-- #content end -->
+		</section><!-- #content end -->
 
 		<!-- Footer
 		============================================= -->
 			<!-- Footer
 		============================================= -->
 		<footer id="footer" style="margin-top: 0; background-color: #F5F5F5; border-top: 2px solid rgba(0,0,0,0.06);">
-
 			<div class="container" style="margin-bottom: 30px; border-bottom: 1px solid rgba(0,0,0,0.06);">
 
 				<!-- Footer Widgets
 				============================================= -->
 				<div class="footer-widgets-wrap clearfix">
-
 					<div class="col_two_third">
-
 						<div class="widget clearfix">
-
-							<!-- <div class="widget-subscribe-form-result"></div>
-							<form id="widget-subscribe-form" action="../../include/subscribe.php" method="post" class="nobottommargin row clearfix">
-								<div class="col-lg-9">
-									<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="sm-form-control required email" placeholder="Enter your Email to Subscribe to our Newsletter">
-								</div>
-								<div class="col-lg-3">
-									<button class="button button-rounded nomargin center btn-block" type="submit">Subscribe</button>
-								</div>
-							</form> -->
-
-							<!-- <div class="line line-sm"></div> -->
-
 							<div class="clear-bottommargin-sm clearfix">
 								<div class="row">
 									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
@@ -462,7 +255,7 @@
 											<li><h3>Links</h3></li>
 											<li><a href="./index.html">Home</a></li>
 											<li><a href="./about-us.html">About</a></li>
-											<li><a href="./employment.html">Employment</a></li>
+											<li><a href="./careers.html">Careers</a></li>
 											<li><a href="./contact.html">Contact</a></li>
 										</ul>
 									</div>
@@ -488,85 +281,18 @@
 										<div class="col-lg-12 bottommargin-sm">
 											<div class="footer-big-contacts">
 												<a href="tel:1-650-994-2234"><span>Send an Email:</span></a>
-												<a href="mailto:ask@reliefnursingservices.com"><p>ask@reliefnursingservices.com</p></a>
+												<a href="mailto:ask@reliefnursingsf.com"><p>ask@reliefnursingsf.com</p></a>
 											</div>
 										</div>
-
 									</div>
-
-									<!-- <div class="col-lg-3 col-6 bottommargin-sm widget_links">
-										<ul>
-											<li><a href="#">Corporate</a></li>
-											<li><a href="#">Agency</a></li>
-											<li><a href="#">eCommerce</a></li>
-											<li><a href="#">Personal</a></li>
-											<li><a href="#">One Page</a></li>
-										</ul>
-									</div> -->
-
-									<!-- <div class="col-lg-3 col-6 bottommargin-sm widget_links">
-										<ul>
-											<li><a href="#">Restaurant</a></li>
-											<li><a href="#">Wedding</a></li>
-											<li><a href="#">App Showcase</a></li>
-											<li><a href="#">Magazine</a></li>
-											<li><a href="#">Landing Page</a></li>
-										</ul>
-									</div> -->
 								</div>
 							</div>
-
 						</div>
-
 					</div>
 
-					<div class="col_one_third col_last">
-
-						<div class="widget clear-bottommargin-sm clearfix">
-
-							<!-- <div class="row">
-
-								<div class="col-lg-12 bottommargin-sm">
-									<div class="footer-big-contacts">
-										<span>Call Us:</span>
-										(650) 994-2234
-									</div>
-								</div>
-
-								<div class="col-lg-12 bottommargin-sm">
-									<div class="footer-big-contacts">
-										<span>Send an Email:</span>
-										<p>www.reliefnursingservicesinc.com	</p>
-									</div>
-								</div>
-
-							</div> -->
-
-						</div>
-
-						<!-- <div class="widget subscribe-widget clearfix">
-							<div class="row">
-
-								<div class="col-lg-6 clearfix bottommargin-sm">
-									<a href="#" class="social-icon si-dark si-colored si-facebook nobottommargin" style="margin-right: 10px;">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
-								</div>
-								<div class="col-lg-6 clearfix">
-									<a href="#" class="social-icon si-dark si-colored si-rss nobottommargin" style="margin-right: 10px;">
-										<i class="icon-rss"></i>
-										<i class="icon-rss"></i>
-									</a>
-									<a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
-								</div>
-
-							</div>
-						</div> -->
-
-					</div>
-
+					<!-- <div class="col_one_third col_last">
+						<div class="widget clear-bottommargin-sm clearfix"> TEST</div>
+					</div> -->
 				</div><!-- .footer-widgets-wrap end -->
 
 			</div>
@@ -596,9 +322,8 @@
 
 	<!-- Go To Top
 	============================================= -->
-	<div id="gotoTop" class="">
-		<i class="fas fa-arrow-circle-up">
-	</div>
+	<div id="gotoTop"><i class="fas fa-arrow-circle-up"></i></div>
+
 
 	<!-- External JavaScripts
 	============================================= -->
@@ -608,6 +333,6 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
-
+	<script src="js/main.js"></script>
 </body>
 </html>
