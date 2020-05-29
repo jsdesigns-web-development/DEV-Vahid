@@ -177,7 +177,11 @@
 			<!-- CAREER NAV -->
 			<div class="row mt-4 mb-5 pl-1 border-bottom">
 				<h5>
-					<span id="career-nav-toggle-training" class="mr-2" onclick="displayTraining();">Training</span>&nbsp;<span style="font-size: 1.25em;">&bull;</span>&nbsp;<span id="career-nav-toggle-app" class="ml-2" onclick="displayApplication()">Employment Application</span>
+                    <span id="career-nav-toggle-training" class="mr-2" onclick="displayTraining();">Training</span>
+                    &nbsp;
+                    <span style="font-size: 1.25em;">&bull;</span>
+                    &nbsp;
+                    <span id="career-nav-toggle-app" class="ml-2" onclick="displayApplication()">Employment Application</span>
 				</h5>
 			</div>
 
@@ -245,7 +249,7 @@
                 <div class="row form-group">
                     <div class="col-md-12 col-lg-6 my-4">
                         <label for="application date">Date Of Application:</label>
-                        <input required class="sm-form-control" type="text" id="date-of-application" value="today's date" name="application date" readonly>
+                        <input required class="sm-form-control" type="text" id="date-of-application" value="today's date" name="application date" readonly style="width: 10em; text-align: center;">
                     </div>
                 </div>
 
@@ -329,12 +333,12 @@
 	
 				<div class="col-md-12 col-lg-6 mt-4">
 					<label for="[Applicant] State">State:</label>
-					<input class="sm-form-control" type="text" id="state" name="[Applicant] State">
+					<input class="sm-form-control" type="text" id="state" name="[Applicant] State" maxlength="4">
                 </div>
                 
                 <div class="col-md-12 col-lg-6 mt-4">
 					<label for="[Applicant] Zip">Zip:</label>
-					<input class="sm-form-control" type="text" id="zip" name="[Applicant] Zip">
+					<input class="sm-form-control" type="text" id="zip" name="[Applicant] Zip" maxlength="10">
                 </div>
                 
             </div>
@@ -579,7 +583,7 @@
 					</div>
 					<div class="col-lg-12 pt-5">
 						<label for="convicted of a criminal offense - initials">Initials:</label>
-						<input required class="sm-form-control" type="text" id="criminalOffenseInitial" name="Convicted of criminal offense? - initial" style="width: 5em;">
+						<input required class="sm-form-control" type="text" id="criminalOffenseInitial" name="Convicted of criminal offense? - initial" style="width: 5em; text-align: center;">
 					</div>
 				</fieldset>
             </div>
@@ -722,20 +726,27 @@
 			$("#application-for-employment").show();
         }
         
-        // function dateToday(){
-        //     var today_date = new Date().format('m-d-Y');
-        //     return today_date;
-        // }
+        var monthName = {
+            "0": "Jan",
+            "1": "Feb",
+            "2": "March",
+            "3": "April",
+            "4": "May",
+            "5": "June",
+            "6": "July",
+            "7": "Aug",
+            "8": "Sept",
+            "9": "Oct",
+            "10": "Nov",
+            "11": "Dec"
+        };
 
-        // console.log(dateToday());
-
-        // $('#date-of-application').val(dateToday());
-        var todaysDate = new Date(),
-            day = todaysDate.getDate(),
-            month = todaysDate.getMonth() + 1,
-            year = todaysDate.getFullYear();
-
-        var dateStr = year + "-" month + "-" + day;
+        var todaysDate = new Date();
+        var day = todaysDate.getDate();
+        var month = todaysDate.getMonth();
+        var year = todaysDate.getFullYear();
+        
+        var dateStr = monthName[month.toString()] + " " + day + ", " + year;
         
         document.getElementById('date-of-application').value = dateStr;
 	</script>
