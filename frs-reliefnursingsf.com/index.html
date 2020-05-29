@@ -206,41 +206,45 @@
 					<div id="booking-appointment-form" class="col-lg-7 nopadding">
 						<div class="bgcolor form-widget col-padding" data-loader="button">
 							<h2>Get Relief. Hire a Nurse!</h2>
-							<div class="form-result"></div>
-							<form class="nobottommargin" id="template-medical-form" name="template-medical-form" action="include/form.php" method="post">
+							<!-- <div class="form-result"></div> -->
+							<form class="nobottommargin" action="https://formspree.io/mkzglljx" method="POST">
 								<div class="col_two_third">
-									<label for="template-medical-name">Name:</label>
-									<input type="text" id="template-medical-name" name="template-medical-name" class="form-control not-dark required" value="">
+									<label for="name">Name:</label>
+									<input type="text" id="name" name="name" class="form-control not-dark required" value="">
 								</div>
+								
 								<div class="col_two_third">
-									<label for="template-medical-phone">Phone:</label>
-									<input type="text" id="template-medical-phone" name="template-medical-phone" class="form-control not-dark required" value="">
+									<label for="phone">Phone:</label>
+									<input type="text" id="phone" name="phone" class="form-control not-dark required" value="">
 								</div>
 								<div class="clear"></div>
 								<div class="col_two_third">
-									<label for="template-medical-email">Email Address:</label>
-									<input type="email" id="template-medical-email" name="template-medical-email" class="form-control not-dark required" value="">
+									<label for="email">Email Address:</label>
+									<input type="email" id="email" name="email" class="form-control not-dark required" value="">
 								</div>
 								<div class="col_two_third">
-									<label for="template-medical-message">Message:</label>
-									<textarea id="template-medical-message" name="template-medical-message" class="form-control not-dark required" cols="30" rows="5"></textarea>
+									<label for="message">Message:</label>
+									<textarea id="message" name="message" class="form-control not-dark required" cols="30" rows="5"></textarea>
 								</div>
 								
 								<div class="clear"></div>
 								<div class="col_two_fifth nobottommargin"></div>
 								
 								<div class="clear"></div>
-								<div class="col_full hidden">
+								<!-- <div class="col_full hidden">
 									<input type="text" name="template-medical-botcheck" value="" />
+								</div> -->
+								<div style="display:none;">
+									<input type="hidden" name="_subject" value="[ reliefnursingsf.com ] You have a new message!" />
+									<input type="hidden" name="topic" value="general contact" />
+									<input type="hidden" name="_next" value="https://reliefnursingsf.com" />
+									<input type="text" name="_gotcha" style="display:none" />
 								</div>
 
 								<div class="col_full topmargin-sm nobottommargin">
 									<button class="button button-rounded button-white button-light nomargin" type="submit" value="submit">Send Message</button>
 								</div>
 								<div class="clear"></div>
-								<input type="hidden" name="prefix" value="template-medical-">
-								<input type="hidden" name="subject" value="Medical Appointment">
-								<input type="hidden" name="html_title" value="Appointment Details">
 							</form>
 
 						</div>
