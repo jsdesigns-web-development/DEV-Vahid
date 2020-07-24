@@ -109,10 +109,12 @@
 
 :root {
 	--thm-font: 'Teko', sans-serif;
-	--thm-base: #ffaa17;
+	--thm-base: #81D742;
 	--thm-black: #222429;
 	--thm-text: #686a6f;
 }
+
+
 
 body {
 
@@ -571,8 +573,8 @@ img {
 .main-header .header-upper .logo-box .logo img {
 	position: relative;
 	display: inline-block;
-	max-width: 100%;
-	max-height: 34px;
+	/* max-width: 100%; */
+	max-height: 85px;
 	z-index: 1;
 }
 
@@ -1791,7 +1793,7 @@ img.lazy-image.loaded {
 	width: 570px;
 	max-width: 100%;
 	height: 810px;
-	background: url(../images/main-slider/b-2-shape-1.png) left top no-repeat;
+	/* background: url(../images/main-slider/b-2-shape-1.png) left top no-repeat; */
 	z-index: 2;
 	opacity: 0;
 	-webkit-transform: translateY(-100%);
