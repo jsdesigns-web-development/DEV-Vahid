@@ -7938,7 +7938,7 @@ img.lazy-image.loaded {
 
 .contact-section {
 	position: relative;
-	padding: 120px 0px 100px;
+	padding: 0 !important;
 	background: #ffffff;
 }
 
