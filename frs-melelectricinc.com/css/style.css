@@ -416,7 +416,7 @@ figure {
 	background-color: rgba(0, 0, 0, 0);
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-image: url(../images/icons/preloader.png);
+	background-image: url(../images/icons/mel-preloader.png);
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
