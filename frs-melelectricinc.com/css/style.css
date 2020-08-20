@@ -734,7 +734,7 @@ img {
 
 .main-menu .navigation>li:hover>a,
 .main-menu .navigation>li.current>a {
-	color: #ffffff;
+	color: green;
 }
 
 .header-style-two .main-menu .navigation>li>a,
