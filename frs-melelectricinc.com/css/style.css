@@ -9283,12 +9283,12 @@ img.lazy-image.loaded {
 }
 
 .mobile-nav__container li a:hover {
-	color: #ffaa16;
+	color: green;
 }
 
 .mobile-nav__container li.current-menu-item>a,
 .mobile-nav__container li.current>a {
-	color: #ffaa16;
+	color: green;
 }
 
 
