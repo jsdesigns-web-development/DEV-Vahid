@@ -281,8 +281,174 @@
               </div>
             </div>
           </section>
+<!-- contact form -->
+<section class="pt-5 pb-5">
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-4 mt-lg-5 mt-lg-5">
+               <h4 class="text-center"><i class="far fa-thumbs-up"></i> <br> Guaranteed Quality Service</h4>
+               <hr>
+               <h4 class="text-center mt-5"><i class="fas fa-user"></i> <br> Experience You Can Trust</h4>
+               <hr>
+               <h4 class="text-center mt-5"><i class="fas fa-check-square"></i> <br> Accurate Estimates</h4>
+               <hr>
+               <h4 class="text-center mt-5"><i class="fas fa-dollar-sign"></i> <br> Loyalty Program</h4>
+               <hr>
+           </div>
 
+           <div class="col-lg-8">
+               <h4>Hire Us For Your Next Project</h4>
+            <form class="" action="index.html" method="post">
+                <h5>Your Info:</h5>
+                <div class="row">
+                  <div class="form-group col-6">
+                    <label for="type">Type</label>
+                    <select name="type" class="form-control">
+                       <option>Select customer type</option>
+                       <option>Residential</option>
+                       <option>Commercial</option>
+                       <option>Contractor</option>
+                   </select>
+                  </div>
+                  <div class="form-group col-6">
+                    <label for="city">City:</label>
+                    <input class="form-control" type="text" name="city" value="">
+                  </div>
+                </div>
+                <!-- type and city -->
+                <div class="row">
+                  <div class="form-group col-6">
+                    <label for="name">First name:</label>
+                    <input class="form-control "type="text" placeholder="First Name:" name="name" value="">
+                  </div>
+                  <div class="form-group col-6">
+                    <label for="name">Last name:</label>
+                    <input class="form-control" placeholder="Lastname:" type="text" name="name" value="">
+                  </div>
+                </div>
+                <!-- / first name and lastname -->
 
+                <!-- phone and email  -->
+                <div class="row">
+                  <div class="form-group col-4">
+                      <label for="city">Phone:</label>
+                      <input class="form-control" type="phone" name="phone" value="">
+                  </div>
+                  <div class="form-group col-4">
+                      <label for="email">Email:</label>
+                      <input class="form-control" type="email" name="email" value="">
+                  </div>
+                  <div class="col-4">
+                    <span class="d-block">Contact preference</span>
+                    <span>
+                        <input class="form-check-input" type="radio" name="contact" id="phone" value="phone" checked>
+                        <label class="form-check-label" for="phone">  Phone:  </label>
+                    </span>
+                      <span class="ml-5">
+                        <input class="form-check-input " type="radio" name="contact" id="email" value="email">
+                        <label class="form-check-label" for="email">Email: </label>
+                      </span>
+                  </div>
+                </div>
+                <!-- end of phone and email -->
+
+                <div>
+                  <div class="form-check">
+                      <span class="d-block">Do you need immediate after hours service?</span>
+                        <span>
+                            <input class="form-check-input" type="radio" name="service" id="yes" value="phone" checked>
+                            <label class="form-check-label" for="yes">  yes:  </label>
+                        </span>
+                        <span class="ml-5">
+                            <input class="form-check-input " type="radio" name="service" id="no" value="email">
+                            <label class="form-check-label" for="no">No: </label>
+                        </span>
+                    </div>
+                </div>
+                <h4>Job Description:</h4>
+                <div class="form-group">
+                    <label for="date">Anticipated start date</label>
+                    <input type="date" name="date" value="">
+                </div>
+                <div class="row">
+                   <div class="col-6">
+                     <label for="type">Current situation</label>
+                     <select name="type" class="form-control">
+                        <option>Select Closest answer</option>
+                        <option>Don't have electrical</option>
+                        <option>Not happy with our electrician</option>
+                        <option>Price checking our electrician</option>
+                    </select>
+                   </div>
+                   <div class="col-6">
+                     <label for="type">Project status</label>
+                     <select name="type" class="form-control">
+                        <option>Select Closest answer</option>
+                        <option>Planning</option>
+                        <option>Bidding</option>
+                        <option>Underway</option>
+                        <option>Behind</option>
+                    </select>
+                   </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                      <label for="type">Budget for project</label>
+                      <select name="type" class="form-control">
+                         <option>Select Budget</option>
+                         <option>Under 500</option>
+                         <option>500 - 1,000</option>
+                         <option>1,000 - 2,000</option>
+                         <option>2,000 - 5,000</option>
+                         <option>5,000 - 10,000</option>
+                         <option>10,000 + </option>
+                     </select>
+                    </div>
+
+                    <div class="col-6">
+                      <label for="date" class="d-block">Anticipated start date</label>
+                      <input type="date" name="date" value="">
+                    </div>
+                </div>
+                <!-- / project info -->
+                <div class="form-group">
+                     <label for="message">Message:</label>
+                     <textarea class="form-control" id="message" rows="3"></textarea>
+               </div>
+               <input class="btn btn-sm btn-success" type="submit" name="" value="Send">
+              </form>
+           </div>
+       </div>
+   </div>
+</section>
+
+<!-- contact and map -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 pt-5">
+                <h5>MEL ELECTRIC INC</h5>
+                <h6>902 Enterprise Way Suite G</h6>
+                <h6>Napa, CA 94558</h6>
+                <h6>707-666-2976</h6>
+            </div>
+            <!-- / -->
+            <div class="col-lg-6">
+                <iframe class="map-iframe"
+                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.8961787098847!2d-122.27389498466832!3d38.2587138796742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085071e7c761a4b%3A0x2757ad604b1e6047!2sMEL%20Electric!5e0!3m2!1sen!2str!4v1597565923991!5m2!1sen!2str" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <!-- / -->
+            <div class="col-lg-3">
+                <p class="mt-5">
+                    <strong class="d-block">License # 1010343</strong>
+                    <strong class="d-block">Hours: Mon – Fri: 8:00 – 5:00 PM, Weekends By Appointment</strong>
+                    <strong class="d-block">Emergency Service Available</strong>
+                    <strong class="d-block">Languages: English, Spanish</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
         <!-- Main Footer -->
         <footer class="main-footer normal-padding">
             <div class="auto-container">
