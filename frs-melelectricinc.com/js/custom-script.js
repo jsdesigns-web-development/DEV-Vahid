@@ -626,4 +626,8 @@
 		handlePreloader();
 	});
 
+	$('.carousel').carousel({
+		interval: false,
+	  });
+
 })(window.jQuery);
