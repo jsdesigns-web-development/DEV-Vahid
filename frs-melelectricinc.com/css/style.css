@@ -565,6 +565,7 @@ img {
 	padding: 15px 50px 0px 0px;
 	margin-right: 50px;
 	z-index: 7;
+	max-height: 85px;
 }
 
 .main-header .header-upper .logo-box .logo {
@@ -576,7 +577,7 @@ img {
 	position: relative;
 	display: inline-block;
 	/* max-width: 100%; */
-	max-height: calc(1 * 85px);
+	max-height: calc(2.25 * 85px); /* used to be 1 * 85*/
 	max-width: 85%;
 	z-index: 1;
 }
@@ -635,6 +636,11 @@ img {
 
 .main-header .other-links .link-box .number:hover {
 	text-decoration: underline;
+}
+
+.number img {
+	color: #81d742;
+	margin-right: 1em;
 }
 
 .main-header .other-links .call-us {
