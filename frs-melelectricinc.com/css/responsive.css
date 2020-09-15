@@ -93,6 +93,7 @@
 	.main-header.fixed-header .header-upper .logo-box {
 		padding-top: 20px;
 		padding-bottom: 20px;
+		z-index: 1;
 	}
 
 	.main-header.fixed-header .nav-outer .mobile-nav-toggler {
@@ -113,6 +114,7 @@
 
 	.main-menu .navigation > li{
 		margin-right: 30px;
+		z-index: 999;
 	}
 
 
