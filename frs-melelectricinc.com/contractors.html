@@ -202,14 +202,30 @@
             <div class="container">
               <div class="row">
                   <div class="col-lg-6">
-                      <h5 class="text-light"> <i style="color: #64BD51;" class="fas fa-home"></i> New Construction</h5>
-                      <h5 class="text-light"> <i style="color: #64BD51;" class="fab fa-rev"></i> Remodel / Addition / TI</h5>
-                      <h5 class="text-light"> <i style="color: #64BD51;" class="fas fa-synagogue"></i> Spec Homes</h5>
-                      <h5 class="text-light"> <i style="color: #64BD51;" class="far fa-building"></i> Commercial</h5>
-                      <h5 class="text-light"> <i style="color: #64BD51;" class="fas fa-hotel"></i> Industrial</h5>
-                      <h5 class="text-light"> <i style="color: #64BD51;" class="fas fa-wine-glass"></i> Winery</h5>
-
-
+                      <div class="row justify-content-start">
+                          <div class="col-2 text-center"><h5 class="text-center"><i style="color: #64BD51;" class="text-center fas fa-home"></i></h5></div>
+                          <div class="col-10"><h5 class="text-light">  New Construction</h5></div>
+                      </div>
+                      <div class="row justify-content-start">
+                          <div class="col-2 text-center"><h5 class="text-center"><i style="color: #64BD51;" class="text-center fab fa-rev"></i></h5></div>
+                          <div class="col-10"><h5 class="text-light">  Remodel / Addition / TI</h5></div>
+                      </div>
+                      <div class="row justify-content-start">
+                          <div class="col-2 text-center"><h5 class="text-center"><i style="color: #64BD51;" class="text-center fas fa-synagogue"></i></h5></div>
+                          <div class="col-10"><h5 class="text-light">  Spec Homes</h5></div>
+                      </div>
+                      <div class="row justify-content-start">
+                          <div class="col-2 text-center"><h5 class="text-center"><i style="color: #64BD51;" class="text-center fas fa-building"></i></h5></div>
+                          <div class="col-10"><h5 class="text-light">  Commercial</h5></div>
+                      </div>
+                      <div class="row justify-content-start">
+                          <div class="col-2 text-center"><h5 class="text-center"><i style="color: #64BD51;" class="text-center fas fa-hotel"></i></h5></div>
+                          <div class="col-10"><h5 class="text-light">  Industrial</h5></div>
+                      </div>
+                      <div class="row justify-content-start">
+                          <div class="col-2 text-center"><h5 class="text-center"><i style="color: #64BD51;" class="text-center fas fa-wine-glass"></i></h5></div>
+                          <div class="col-10"><h5 class="text-light">  Winery</h5></div>
+                      </div>
 
                   </div>
                 <div class="col-lg-6">
@@ -330,7 +346,7 @@
 
                 <!-- phone and email  -->
                 <div class="row">
-                  <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                  <!-- <div class="form-group col-lg-4 col-md-4 col-sm-12">
                       <label for="city">Phone:</label>
                       <input class="form-control" type="phone" name="phone" value="">
                   </div>
@@ -348,21 +364,48 @@
                         <input class="form-check-input " type="radio" name="contact" id="email" value="email">
                         <label class="form-check-label" for="email">Email: </label>
                       </span>
-                  </div>
+                  </div> -->
+                  <div class="border px-3 rounded-sm col-6 ml-3">
+                      <span class="d-block">Contact preference</span>
+                        <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="contact_preference" id="phone" value="phone" checked>
+                              <label class="form-check-label" for="phone">
+                                Phone
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="contact_preference" id="email" value="email">
+                              <label class="form-check-label" for="email">
+                                Email
+                              </label>
+                            </div>
+                      </div>
                 </div>
+
                 <!-- end of phone and email -->
 
-                <div>
-                  <div class="form-check">
+                <div class="row mb-3">
+                  <!-- <div class="form-check">
                       <span class="d-block">Do you need immediate after hours service?</span>
                         <span>
                             <input class="form-check-input" type="radio" name="service" id="yes" value="phone" checked>
-                            <label class="form-check-label" for="yes">  yes:  </label>
+                            <label class="form-check-label" for="yes">Yes  </label>
                         </span>
                         <span class="ml-5">
                             <input class="form-check-input " type="radio" name="service" id="no" value="email">
-                            <label class="form-check-label" for="no">No: </label>
+                            <label class="form-check-label" for="no">No </label>
                         </span>
+                    </div> -->
+                    <div class="border px-3 mt-3 rounded-sm col-6 ml-3">
+                        <span class="d-block">Do you need immediate after hours service?</span>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="after_hours_service" id="yes" value="yes">
+                            <label class="form-check-label" for="yes">Yes  </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input " type="radio" name="after_hours_service" id="no" value="no" checked>
+                            <label class="form-check-label" for="no">No </label>
+                        </div>
                     </div>
                 </div>
                 <h4>Job Description:</h4>
@@ -424,26 +467,30 @@
 <!-- contact and map -->
 <section>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3 pt-5">
-                <h5>MEL ELECTRIC INC</h5>
-                <h6>902 Enterprise Way Suite G</h6>
-                <h6>Napa, CA 94558</h6>
-                <h6>707-666-2976</h6>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-5">
+                <div class="row">        
+                        <div class="col-12 pb-lg-3 pt-lg-0 pb-md-3 pt-md-2 pt-sm-2">
+                            <h5 style="line-height: 0.5em;">MEL ELECTRIC INC</h5>
+                            <h6 style="line-height: 0.25em;">902 Enterprise Way Suite G</h6>
+                            <h6 style="line-height: 0.25em;">Napa, CA 94558</h6>
+                            <h6 style="line-height: 0.25em;">707-666-2976</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mt-3 rounded-sm py-2 px-3" style="line-height: 1.25em; font-size: 1.25em;">
+                            <span class="d-block"><strong>License #</strong>1010343</span>
+                            <span class="d-block"><strong>Hours:</strong> Mon – Fri: 8:00 – 5:00 PM, Weekends By Appointment</span>
+                            <span class="d-block"><strong>Emergency Service Available</strong></span>
+                            <span class="d-block"><strong>Languages:</strong> English, Spanish</span>
+                        </div>
+                </div>
             </div>
-            <!-- / -->
-            <div class="col-lg-6">
-                <iframe class="map-iframe pb-5"
-                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.8961787098847!2d-122.27389498466832!3d38.2587138796742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085071e7c761a4b%3A0x2757ad604b1e6047!2sMEL%20Electric!5e0!3m2!1sen!2str!4v1597565923991!5m2!1sen!2str" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-            <!-- / -->
-            <div class="col-lg-3">
-                <p class="mt-5">
-                    <strong class="d-block">License # 1010343</strong>
-                    <strong class="d-block">Hours: Mon – Fri: 8:00 – 5:00 PM, Weekends By Appointment</strong>
-                    <strong class="d-block">Emergency Service Available</strong>
-                    <strong class="d-block">Languages: English, Spanish</strong>
-                </p>
+            <div class="col-sm-12 col-md-6">
+                <div class="col-12 map-box">
+                    <iframe class="map-iframe pb-5"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.8961787098847!2d-122.27389498466832!3d38.2587138796742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085071e7c761a4b%3A0x2757ad604b1e6047!2sMEL%20Electric!5e0!3m2!1sen!2str!4v1597565923991!5m2!1sen!2str" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
         </div>
     </div>
